@@ -12,14 +12,17 @@
 	.container {
 		background-color: beige;
 		height: 100vh;
-		width: 100vw;
-		padding: 10vh 6vw;
-		max-width: 100%;
+
+		padding: 10vh 0vw;
 		box-sizing: border-box;
 		position: relative;
+		display: flex;
+		justify-content: center;
 	}
 	.content {
 		position: relative;
+		width: 90%;
+		max-width: 1200px;
 		height: 100%;
 		box-sizing: border-box;
 		background-color: rgb(129, 129, 94);

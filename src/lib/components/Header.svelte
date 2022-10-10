@@ -1,31 +1,37 @@
 <div class="header">
-	<p>Simon Müller</p>
-	<nav>
-		<a href="#work">WORK</a>
-		<a href="#about">ABOUT</a>
-		<a href="#contact">CONTACT</a>
-		<div class="dot" />
-	</nav>
+	<div class="wrapper">
+		<h5>Simon Müller</h5>
+		<nav>
+			<a href="#work">WORK</a>
+			<a href="#about">ABOUT</a>
+			<a href="#contact">CONTACT</a>
+			<div class="dot" />
+		</nav>
+	</div>
 </div>
 
 <style>
 	.header {
 		display: flex;
+		justify-content: center;
+		background-color: #e1b9b9;
+		padding: 2vh 0vw;
+	}
+	.wrapper {
+		display: flex;
 		flex-direction: row;
-		align-items: center;
 		justify-content: space-between;
-		position: sticky;
-		padding: 2vh 6vw;
+		width: 90%;
+		max-width: 1200px;
 	}
 
 	nav {
 		list-style-type: none;
-		float: right;
 	}
 
 	a {
 		text-decoration: none;
-		width: 80px;
+		width: 100px;
 		-webkit-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 		display: inline-block;
@@ -42,31 +48,41 @@
 		background: #fddb3a;
 		border-radius: 50%;
 		opacity: 0;
-		-webkit-transform: translateX(30px);
-		transform: translateX(40px);
-		-webkit-transition: all 0.2s ease-in-out;
-		transition: all 0.2s ease-in-out;
+		transform: translateX(50px);
+		transition: all 0.3s ease-in-out;
 	}
 
 	a:nth-child(1):hover ~ .dot {
-		transform: translateX(40px);
-		transition: all 0.2s ease-in-out;
+		transform: translateX(50px);
+		transition: all 0.3s ease-in-out;
 		opacity: 1;
 	}
 
 	a:nth-child(2):hover ~ .dot {
-		transform: translateX(120px);
-		transition: all 0.2s ease-in-out;
+		transform: translateX(150px);
+		transition: all 0.3s ease-in-out;
 		opacity: 1;
 	}
 
 	a:nth-child(3):hover ~ .dot {
-		transform: translateX(210px);
-		transition: all 0.2s ease-in-out;
+		transform: translateX(260px);
+		transition: all 0.3s ease-in-out;
 		opacity: 1;
 	}
 
-	p {
-		/* width: fit-content; */
+	@media screen and (max-width: 550px) {
+		.wrapper {
+			flex-direction: column;
+		}
+		nav {
+			display: flex;
+			margin-top: 10px;
+			justify-content: flex-start;
+			transform: translateX(-28px);
+		}
+
+		.dot {
+			display: none;
+		}
 	}
 </style>
