@@ -14,7 +14,7 @@
 	.header {
 		display: flex;
 		justify-content: center;
-		background-color: #e1b9b9;
+		background-color: var(--primary-100);
 		padding: 2vh 0vw;
 	}
 	.wrapper {
@@ -23,6 +23,7 @@
 		justify-content: space-between;
 		width: 90%;
 		max-width: 1200px;
+		align-items: center;
 	}
 
 	nav {
@@ -36,16 +37,17 @@
 		transition: all 0.2s ease-in-out;
 		display: inline-block;
 		text-align: center;
+		color: black;
 	}
 
 	a:hover {
-		color: #fddb3a;
+		color: var(--secondary-100);
 	}
 
 	.dot {
 		width: 6px;
 		height: 6px;
-		background: #fddb3a;
+		background: var(--secondary-100);
 		border-radius: 50%;
 		opacity: 0;
 		transform: translateX(50px);
@@ -73,6 +75,7 @@
 	@media screen and (max-width: 550px) {
 		.wrapper {
 			flex-direction: column;
+			align-items: flex-start;
 		}
 		nav {
 			display: flex;
