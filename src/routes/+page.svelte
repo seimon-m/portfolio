@@ -1,7 +1,8 @@
 <script>
 	import '$lib/styles/global.css';
-	import WorkPreview from '../lib/components/WorkPreview.svelte';
+	import WorkPreview from '$lib/components/WorkPreview.svelte';
 	import work from '$lib/data/work.json';
+	import simon from '$lib/assets/simon-klein.webp';
 </script>
 
 <div class="container">
@@ -14,6 +15,14 @@
 			{#each work as { title, tags }, index}
 				<WorkPreview {title} {tags} />
 			{/each}
+		</div>
+		<div class="section about">
+			<h2 class="section-title">about</h2>
+			<img src={simon} alt="portrait of simon müller" width="250" />
+			<p>
+				I use technology to create digital experiences. I love to explore the space beyond the
+				screen. Based in Bern, Switzerland
+			</p>
 		</div>
 	</div>
 </div>
@@ -36,19 +45,23 @@
 	}
 
 	.start {
-		height: 80vh;
+		height: 82vh;
 	}
 
 	.section {
 		position: relative;
+		margin-bottom: 10rem;
 	}
 
 	.section-title {
 		position: absolute;
-		top: 90px;
-		left: -80px;
-		transform: rotate(-90deg);
 		z-index: 1;
-		text-align: right;
+		transform-origin: top left;
+		left: 0;
+		top: 0;
+		transform: rotate(-90deg) translateX(-120%) translateY(-60%);
+	}
+
+	.about {
 	}
 </style>
