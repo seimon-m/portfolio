@@ -15,6 +15,7 @@
 		position: relative;
 		height: 350px;
 		margin-bottom: 2rem;
+		margin-right: 6rem;
 	}
 	.description {
 		position: absolute;
