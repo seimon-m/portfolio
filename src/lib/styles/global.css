@@ -44,15 +44,15 @@ h3 {
 	font-weight: 300;
 	line-height: 100%;
 	/* font-size: 6rem; */
-	font-size: clamp(10px, calc(20px + 2vw), 180px);
+	font-size: clamp(10px, calc(20px + 2vw), 35px);
 }
 
 h4 {
 	font-family: 'Raleway', sans-serif;
 	font-style: normal;
-	font-weight: 200;
+	font-weight: 400;
 	/* font-size: 2.5rem; */
-	font-size: clamp(10px, calc(30px + 2vw), 180px);
+	font-size: clamp(10px, calc(30px + 1.8vw), 45px);
 }
 
 h5 {
@@ -60,7 +60,7 @@ h5 {
 	font-style: normal;
 	font-weight: 100;
 	/* font-size: 1.4rem; */
-	font-size: clamp(10px, calc(10px + 2vw), 180px);
+	font-size: clamp(10px, calc(10px + 2vw), 35px);
 }
 
 a {
@@ -68,7 +68,7 @@ a {
 	font-style: normal;
 	font-weight: 100;
 	/* font-size: 1.4rem; */
-	font-size: clamp(10px, calc(10px + 1vw), 180px);
+	font-size: clamp(10px, calc(10px + 1vw), 20px);
 }
 
 p {

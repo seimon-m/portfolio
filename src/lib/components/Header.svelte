@@ -5,7 +5,7 @@
 			<a href="#work">WORK</a>
 			<a href="#about">ABOUT</a>
 			<a href="#contact">CONTACT</a>
-			<div class="dot" />
+			<!-- <div class="dot" /> -->
 		</nav>
 	</div>
 </div>
@@ -15,24 +15,25 @@
 		display: flex;
 		justify-content: center;
 		background-color: var(--primary-100);
-		padding: 2vh 0vw;
 	}
 	.wrapper {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		width: 90%;
+		height: 7vh;
 		max-width: 1200px;
 		align-items: center;
 	}
 
 	nav {
 		list-style-type: none;
+		display: flex;
 	}
 
 	a {
 		text-decoration: none;
-		width: 100px;
+		width: calc(50px + 6vw);
 		-webkit-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 		display: inline-block;
@@ -44,7 +45,7 @@
 		color: var(--secondary-100);
 	}
 
-	.dot {
+	/* .dot {
 		width: 6px;
 		height: 6px;
 		background: var(--secondary-100);
@@ -70,22 +71,26 @@
 		transform: translateX(260px);
 		transition: all 0.3s ease-in-out;
 		opacity: 1;
-	}
+	} */
 
 	@media screen and (max-width: 550px) {
 		.wrapper {
 			flex-direction: column;
 			align-items: flex-start;
 		}
+
 		nav {
 			display: flex;
 			margin-top: 10px;
-			justify-content: flex-start;
-			transform: translateX(-28px);
+			transform: translateX(-3.5vw);
 		}
 
-		.dot {
-			display: none;
+		h5 {
+			padding-top: 10px;
 		}
+
+		/* .dot {
+			display: none;
+		} */
 	}
 </style>
