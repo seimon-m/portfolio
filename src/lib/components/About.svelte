@@ -1,7 +1,6 @@
 <script>
 	import simon from '$lib/assets/simon-klein.webp';
 	import ccvv from '$lib/assets/lebenslauf.pdf';
-	import image from '/favicon.png';
 </script>
 
 <div class="about">
@@ -28,7 +27,6 @@
 		<!-- <a href="/cv" target="_blank">Download CV</a> -->
 		<a href="/cv">Download CV</a>
 	</h3>
-	<img src={image} alt="sdfv" />
 	<!-- <div class="cv">
 		<iframe
 			title="PDF"
