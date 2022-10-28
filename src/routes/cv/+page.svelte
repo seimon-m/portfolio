@@ -1,14 +1,16 @@
 <script>
-	import cv from '$lib/assets/lebenslauf.pdf';
+	// import cv from '$lib/assets/lebenslauf.pdf';
+	import pdfviewer from '/favicon.png';
 </script>
 
 <div class="cv">
-	<iframe
+	<!-- <iframe
 		title="PDF"
-		src={`%sveltekit.assets%/pdfjs-2.16.105-dist/web/viewer.html?file=${cv}`}
+		src={`/pdfjs-2.16.105-dist/web/viewer.html?file=${cv}`}
 		width="100%"
 		height="1000px"
-	/>
+	/> -->
+	<img src={pdfviewer} alt="dfv" />
 </div>
 
 <style>
