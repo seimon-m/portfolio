@@ -5,7 +5,7 @@
 <div class="cv">
 	<iframe
 		title="PDF"
-		src={`/pdfjs-2.16.105-dist/web/viewer.html?file=${cv}`}
+		src={`%sveltekit.assets%/pdfjs-2.16.105-dist/web/viewer.html?file=${cv}`}
 		width="100%"
 		height="1000px"
 	/>
