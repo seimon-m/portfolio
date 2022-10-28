@@ -1,11 +1,12 @@
 <script>
 	import simon from '$lib/assets/simon-klein.webp';
+	import ccvv from '$lib/assets/lebenslauf.pdf';
 </script>
 
 <div class="about">
 	<img src={simon} alt="portrait of simon müller" width="250" />
 	<p class="intro">
-		I use technology to create digital experiences. I love to explore the space beyond the screen.
+		I am Simon, a creative coder and web enthusiast. I love to explore the space beyond the screen.
 		Based in Bern, Switzerland
 	</p>
 	<div class="right">
@@ -21,6 +22,18 @@
 			<li>Physical Computing</li>
 		</ul>
 	</div>
+
+	<h3>
+		<a href="/cv" target="_blank">Download CV</a>
+	</h3>
+	<!-- <div class="cv">
+		<iframe
+			title="PDF"
+			src={`/pdfjs-2.16.105-dist/web/viewer.html?file=${ccvv}`}
+			width="100%"
+			height="700px"
+		/>
+	</div> -->
 </div>
 
 <style>
