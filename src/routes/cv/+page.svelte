@@ -3,13 +3,7 @@
 </script>
 
 <div class="cv">
-	<!-- <iframe
-		title="PDF"
-		src={'/pdfjs-2.16.105-dist/web/viewer.html?file=' + '/' + 'lebenslauf.pdf'}
-		width="100%"
-		height="1000px"
-	/> -->
-	<object data={cv} class="cv" />
+	<object data={cv} class="cv" title="CV of Simon Müller" />
 </div>
 
 <style>
