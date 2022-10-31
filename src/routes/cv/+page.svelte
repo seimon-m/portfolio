@@ -3,7 +3,7 @@
 </script>
 
 <div class="cv">
-	<object data={cv} class="cv" title="CV of Simon Müller" />
+	<iframe src={cv} class="cv" title="CV of Simon Müller" type="application/pdf" />
 </div>
 
 <style>
@@ -13,7 +13,5 @@
 		width: -webkit-fill-available;
 		top: 0;
 		left: 0;
-		bottom: 0;
-		right: 0;
 	}
 </style>
