@@ -1,6 +1,6 @@
 <script>
 	import simon from '$lib/assets/simon-klein.webp';
-	import ccvv from '$lib/assets/lebenslauf.pdf';
+	import cv from '$lib/assets/lebenslauf.pdf';
 </script>
 
 <div class="about">
@@ -24,17 +24,8 @@
 	</div>
 
 	<h3>
-		<!-- <a href="/cv" target="_blank">Download CV</a> -->
-		<a href="/cv">Download CV</a>
+		<a href={cv} target="_blank" rel="noreferrer">Download CV</a>
 	</h3>
-	<!-- <div class="cv">
-		<iframe
-			title="PDF"
-			src={`/pdfjs-2.16.105-dist/web/viewer.html?file=${ccvv}`}
-			width="100%"
-			height="700px"
-		/>
-	</div> -->
 </div>
 
 <style>
