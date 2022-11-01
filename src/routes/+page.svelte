@@ -2,7 +2,7 @@
 	import '$lib/styles/global.css';
 	import WorkPreview from '$lib/components/WorkPreview.svelte';
 	import work from '$lib/data/work.json';
-	import About from '../lib/components/About.svelte';
+	import About from '$lib/components/About.svelte';
 </script>
 
 <div class="container">
