@@ -1,8 +1,25 @@
 <script>
+	import gsap from 'gsap/dist/gsap';
+	import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+	import { onMount } from 'svelte';
 	import '$lib/styles/global.css';
 	import WorkPreview from '$lib/components/WorkPreview.svelte';
 	import work from '$lib/data/work.json';
 	import About from '$lib/components/About.svelte';
+
+	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger);
+
+		gsap.to('.scroll-indicator', {
+			scrollTrigger: {
+				trigger: '.work',
+				toggleActions: 'restart none none reverse'
+			},
+			duration: 1,
+			ease: 'power1.inOut',
+			scale: 0
+		});
+	});
 </script>
 
 <div class="container">
