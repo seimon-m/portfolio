@@ -67,9 +67,15 @@
 
 	.start {
 		position: relative;
-		height: 79dvh;
+		height: 79vh;
 		display: flex;
 		align-items: center;
+	}
+
+	@supports (height: 100dvh) {
+		.start {
+			height: 79dvh;
+		}
 	}
 
 	.scroll-indicator {
