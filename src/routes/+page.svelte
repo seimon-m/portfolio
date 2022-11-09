@@ -8,7 +8,7 @@
 <div class="container">
 	<div class="content">
 		<div class="start">
-			<h1 class="start-title">Media artist, <br />Coder and <br /> Designer</h1>
+			<h1 class="start-title">Media artist, Coder and Designer</h1>
 			<div class="scroll-indicator">
 				<p class="scroll-text">
 					<span>scroll down</span>
@@ -16,7 +16,7 @@
 				<span style="z-index: 0;transform: matrix(1, 0, 0, 1, 0, 0);" />
 			</div>
 		</div>
-		<div class="section work">
+		<div class="section work" id="work">
 			<h2 class="section-title">work</h2>
 			<div class="work-wrapper">
 				{#each work as { title, tags }, index}
@@ -24,7 +24,7 @@
 				{/each}
 			</div>
 		</div>
-		<div class="section about">
+		<div class="section about" id="about">
 			<h2 class="section-title">about</h2>
 			<About />
 		</div>
@@ -42,15 +42,15 @@
 	}
 	.content {
 		position: relative;
-		width: 85%;
-		max-width: 1200px;
+		width: 95%;
+		/* max-width: 1200px; */
 		height: 100%;
 		box-sizing: border-box;
 	}
 
 	.start {
 		position: relative;
-		height: 83vh;
+		height: 79vh;
 		display: flex;
 		align-items: center;
 	}
