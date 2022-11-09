@@ -67,7 +67,7 @@
 
 	.start {
 		position: relative;
-		height: 79vh;
+		height: 79dvh;
 		display: flex;
 		align-items: center;
 	}
