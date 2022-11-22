@@ -1,11 +1,6 @@
 <div class="header">
 	<div class="wrapper">
 		<h5>Simon Müller</h5>
-		<!-- <nav>
-			<a href="#work">WORK</a>
-			<a href="#about">ABOUT</a>
-			<a href="#contact">CONTACT</a>
-		</nav> -->
 		<div class="link-wrapper">
 			<p>AVAILABLE FOR FREELANCE WORK</p>
 			<a class="link" target="_blank" href="mailto:hey@seimon.ch">hey@seimon.ch</a>

@@ -17,7 +17,7 @@
 			},
 			duration: 1,
 			ease: 'power1.inOut',
-			scale: 0
+			opacity: 0
 		});
 	});
 </script>
@@ -36,8 +36,8 @@
 		<div class="section work" id="work">
 			<h2 class="section-title">work</h2>
 			<div class="work-wrapper">
-				{#each work as { title, tags }, index}
-					<WorkPreview {title} {tags} />
+				{#each work as project}
+					<WorkPreview {project} />
 				{/each}
 			</div>
 		</div>

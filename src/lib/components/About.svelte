@@ -6,8 +6,9 @@
 <div class="about">
 	<img src={simon} alt="portrait of simon müller" width="250" />
 	<p class="intro">
-		I am Simon, a creative coder and web enthusiast. I love to explore the space beyond the screen.
-		Based in Bern, Switzerland
+		I'm Simon, a creative coder and web enthusiast. I love to explore the space beyond the screen.
+		My native language is Swiss German. I am also a fluent English speaker. I live in Bern,
+		Switzerland.
 	</p>
 	<div class="right">
 		<h3>Things I am passionate about:</h3>

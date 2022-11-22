@@ -1,14 +1,13 @@
 <script>
-	export let title, tags;
+	export let project;
 </script>
 
-<div class="container">
-	<img src={'https://picsum.photos/250/350'} width="250" height="350" alt="random" />
+<a class="container" href="/work/{project.title.replaceAll(' ', '-')}">
+	<img src={'https://picsum.photos/250/350'} width="300" height="350" alt="random" />
 	<div class="description">
-		<h4 class="heading">{title}</h4>
-		<h3>{tags}</h3>
+		<h4 class="heading">{project.title}</h4>
 	</div>
-</div>
+</a>
 
 <style>
 	:root {
@@ -23,8 +22,9 @@
 	.container {
 		position: relative;
 		height: 350px;
+		width: 300px;
 		margin-bottom: 2rem;
-		margin-right: 6rem;
+		margin-right: 3rem;
 		transition: all 0.6s ease;
 	}
 
