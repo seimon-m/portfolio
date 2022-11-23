@@ -2,8 +2,13 @@
 	export let project;
 </script>
 
-<a class="container" href="/work/{project.title.replaceAll(' ', '-')}">
-	<img src={'https://picsum.photos/250/350'} width="300" height="350" alt="random" />
+<a class="container" href="/{project.title.replaceAll(' ', '-')}">
+	{#if project.images}
+		<img src={project?.images?.image0} width="300" height="350" alt="random" />
+	{:else}
+		<img src={'https://picsum.photos/250/350'} width="300" height="350" alt="random" />
+	{/if}
+
 	<div class="description">
 		<h4 class="heading">{project.title}</h4>
 	</div>

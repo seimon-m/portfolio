@@ -6,14 +6,14 @@
 		"abstract": "Die Installation ”Don’t Answer Be Happy” schafft einen interaktiven Erfahrungsraum, in dem sich alles um das persönliche Smartphone dreht. Das Smartphone tritt in einen Dialog mit dem Raum und die Besuchenden werden aufgefordert, Haltung zu beziehen. Es entstehen Konfrontationen mit der Zwiespältigkeit der digitalen Realität, ein Abwenden ist nicht möglich. Der Erfahrungsraum trägt zur Reflexion der digitalen Kolonialisierung von Menschen und Regionen dieser Welt bei, welche nicht in den weltweiten TechHotspots zuhause sind.",
 		"team": "lorem ipsum",
 		"images": {
-			"image1": "$lib/assets/BA/Bild-WWWerkschau-1.jpg",
-			"image2": "$lib/assets/BA/Bild-WWWerkschau-2.jpg",
-			"image3": "$lib/assets/BA/Bild-WWWerkschau-3.jpg",
-			"image4": "$lib/assets/BA/Bild-WWWerkschau-4.jpg",
-			"image5": "$lib/assets/BA/Bild-WWWerkschau-5.jpg",
-			"image6": "$lib/assets/BA/Bild-WWWerkschau-6.jpg",
-			"image7": "$lib/assets/BA/Bild-WWWerkschau-7.jpg",
-			"image8": "$lib/assets/BA/Bild-WWWerkschau-8.jpg"
+			"image0": "src/lib/assets/BA/Bild-WWWerkschau-1.jpg",
+			"image1": "src/lib/assets/BA/Bild-WWWerkschau-2.jpg",
+			"image2": "src/lib/assets/BA/Bild-WWWerkschau-3.jpg",
+			"image3": "src/lib/assets/BA/Bild-WWWerkschau-4.jpg",
+			"image4": "src/lib/assets/BA/Bild-WWWerkschau-5.jpg",
+			"image5": "src/lib/assets/BA/Bild-WWWerkschau-6.jpg",
+			"image6": "src/lib/assets/BA/Bild-WWWerkschau-7.jpg",
+			"image7": "src/lib/assets/BA/Bild-WWWerkschau-8.jpg"
 		}
 	},
 	{
