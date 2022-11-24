@@ -6,14 +6,14 @@
 		"abstract": "Die Installation ”Don’t Answer Be Happy” schafft einen interaktiven Erfahrungsraum, in dem sich alles um das persönliche Smartphone dreht. Das Smartphone tritt in einen Dialog mit dem Raum und die Besuchenden werden aufgefordert, Haltung zu beziehen. Es entstehen Konfrontationen mit der Zwiespältigkeit der digitalen Realität, ein Abwenden ist nicht möglich. Der Erfahrungsraum trägt zur Reflexion der digitalen Kolonialisierung von Menschen und Regionen dieser Welt bei, welche nicht in den weltweiten TechHotspots zuhause sind.",
 		"team": "lorem ipsum",
 		"images": {
-			"image0": "src/lib/assets/BA/Bild-WWWerkschau-1.jpg",
-			"image1": "$lib/assets/BA/Bild-WWWerkschau-2.jpg",
-			"image2": "./assets/BA/Bild-WWWerkschau-3.jpg",
-			"image3": "./lib/assets/BA/Bild-WWWerkschau-4.jpg",
-			"image4": "/src/lib/assets/BA/Bild-WWWerkschau-5.jpg",
-			"image5": "./src/lib/assets/BA/Bild-WWWerkschau-6.jpg",
-			"image6": "/BA/Bild-WWWerkschau-7.jpg",
-			"image7": "./BA/Bild-WWWerkschau-8.jpg"
+			"image0": "/images/Don't-Answer-Be-Happy/Bild-WWWerkschau-1.jpg",
+			"image1": "/images/Don't-Answer-Be-Happy/Bild-WWWerkschau-2.jpg",
+			"image2": "/images/Don't-Answer-Be-Happy/Bild-WWWerkschau-3.jpg",
+			"image3": "/images/Don't-Answer-Be-Happy/Bild-WWWerkschau-4.jpg",
+			"image4": "/images/Don't-Answer-Be-Happy/Bild-WWWerkschau-5.jpg",
+			"image5": "/images/Don't-Answer-Be-Happy/Bild-WWWerkschau-6.jpg",
+			"image6": "/images/Don't-Answer-Be-Happy/Bild-WWWerkschau-7.jpg",
+			"image7": "/images/Don't-Answer-Be-Happy/Bild-WWWerkschau-8.jpg"
 		}
 	},
 	{
@@ -21,14 +21,32 @@
 		"title": "Flushway",
 		"tags": "website",
 		"abstract": "lorem ipsum",
-		"team": "lorem ipsum"
+		"team": "lorem ipsum",
+		"images": {
+			"image0": "/images/Flushway/flushway-screenshot_01.png",
+			"image1": "/images/Flushway/flushway-screenshot_02.png",
+			"image2": "/images/Flushway/flushway-screenshot_03.png",
+			"image3": "/images/Flushway/flushway-screenshot_04.png",
+			"image4": "/images/Flushway/flushway-screenshot_05.png"
+		}
 	},
 	{
 		"id": 2,
-		"title": "Discovery",
+		"title": "curious.images",
 		"tags": "website",
 		"abstract": "lorem ipsum",
-		"team": "lorem ipsum"
+		"team": "lorem ipsum",
+		"images": {
+			"image0": "/images/curious.images/screenshot_1.png",
+			"image1": "/images/curious.images/screenshot_2.png",
+			"image2": "/images/curious.images/screenshot_3.png",
+			"image3": "/images/curious.images/screenshot_4.png",
+			"image4": "/images/curious.images/screenshot_5.png",
+			"image5": "/images/curious.images/screenshot_6.png",
+			"image6": "/images/curious.images/screenshot_7.png",
+			"image7": "/images/curious.images/screenshot_8.png",
+			"image8": "/images/curious.images/screenshot_9.png"
+		}
 	},
 	{
 		"id": 3,

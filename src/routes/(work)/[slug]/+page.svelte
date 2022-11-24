@@ -16,10 +16,37 @@
 	<title>{currentProject.title}</title>
 </svelte:head>
 
-<h2>{currentProject.title}</h2>
+<div class="wrapper">
+	<div class="infos">
+		<h2>{currentProject.title}</h2>
+		<p>{currentProject.abstract}</p>
+	</div>
+	<div class="images">
+		{#if currentProject.images}
+			{#each Object.values(currentProject.images) as image, index}
+				<img src={image} alt="sdf" />
+			{/each}
+		{/if}
+	</div>
+</div>
 
-{#if currentProject.images}
-	{#each Object.values(currentProject.images) as image, index}
-		<img src={image} alt="sdf" width="250" />
-	{/each}
-{/if}
+<style>
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.infos {
+		width: 40vw;
+		margin-right: 2vw;
+	}
+	.images {
+		display: flex;
+		width: 60vw;
+		flex-direction: column;
+	}
+
+	img {
+		margin-bottom: 0vh;
+	}
+</style>

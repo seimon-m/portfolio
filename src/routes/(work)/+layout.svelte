@@ -1,10 +1,11 @@
 <main>
-	<h2>layout scoped</h2>
 	<slot />
 </main>
 
 <style>
-	h2 {
-		background-color: blue;
+	main {
+		margin-left: auto;
+		margin-right: 0;
+		width: 97.5%;
 	}
 </style>
