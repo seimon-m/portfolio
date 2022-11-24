@@ -12,8 +12,8 @@
 			"image3": "./lib/assets/BA/Bild-WWWerkschau-4.jpg",
 			"image4": "/src/lib/assets/BA/Bild-WWWerkschau-5.jpg",
 			"image5": "./src/lib/assets/BA/Bild-WWWerkschau-6.jpg",
-			"image6": "$lib/assets/BA/Bild-WWWerkschau-7.jpg",
-			"image7": "$lib/assets/BA/Bild-WWWerkschau-8.jpg"
+			"image6": "/BA/Bild-WWWerkschau-7.jpg",
+			"image7": "./BA/Bild-WWWerkschau-8.jpg"
 		}
 	},
 	{
