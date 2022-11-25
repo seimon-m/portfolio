@@ -7,5 +7,6 @@
 		margin-left: auto;
 		margin-right: 0;
 		width: 97.5%;
+		color: var(--tertiary-100);
 	}
 </style>
