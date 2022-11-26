@@ -1,3 +1,8 @@
+<script>
+	import HeaderDetail from '$lib/components/HeaderDetail.svelte';
+</script>
+
+<HeaderDetail />
 <main>
 	<slot />
 </main>
@@ -5,8 +10,7 @@
 <style>
 	main {
 		margin-left: auto;
-		margin-right: 0;
-		width: 97.5%;
-		color: var(--tertiary-100);
+		margin-right: auto;
+		width: 95%;
 	}
 </style>

@@ -33,20 +33,51 @@
 <style>
 	.wrapper {
 		display: flex;
-		flex-direction: row;
-	}
-
-	.infos {
-		width: 40vw;
-		margin-right: 2vw;
-	}
-	.images {
-		display: flex;
-		width: 60vw;
 		flex-direction: column;
 	}
 
+	.infos {
+		margin-bottom: 4vh;
+		top: 15vh;
+		position: sticky;
+	}
+
+	.infos > p {
+		margin-top: 4vh;
+		text-align: justify;
+		text-align-last: none;
+		hyphens: auto;
+	}
+
+	.images {
+		display: flex;
+		width: 100vw;
+		flex-direction: column;
+		transform: translate(-2.5%, 0);
+		z-index: 1;
+	}
+
+	h2 {
+		overflow-wrap: break-word;
+	}
+
 	img {
-		margin-bottom: 0vh;
+		margin-top: 1vh;
+	}
+
+	@media screen and (min-width: 600px) {
+		.wrapper {
+			flex-direction: row;
+		}
+
+		.infos {
+			width: 40vw;
+			height: 100vh;
+		}
+
+		.images {
+			width: 60vw;
+			transform: translate(2.5%, 0);
+		}
 	}
 </style>
