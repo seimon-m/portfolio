@@ -21,6 +21,7 @@
 		top: 0;
 		position: sticky;
 		padding-bottom: 2vh;
+		z-index: -1;
 	}
 	.wrapper {
 		display: flex;
