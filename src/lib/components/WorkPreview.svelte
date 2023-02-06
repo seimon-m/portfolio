@@ -4,9 +4,9 @@
 
 <a class="container" href="/{project.title.replaceAll(' ', '-')}">
 	{#if project.images}
-		<img src={project?.images?.image0} width="300" height="350" alt="random" />
+		<img src={project?.images?.image0} alt="random" />
 	{:else}
-		<img src={'https://picsum.photos/250/350'} width="300" height="350" alt="random" />
+		<img src={'https://picsum.photos/250/350'} width="600" height="400" alt="random" />
 	{/if}
 
 	<div class="description">
@@ -25,50 +25,40 @@
 		--text-color: #000000;
 	}
 	.container {
+		background-color: antiquewhite;
 		position: relative;
-		height: 350px;
-		width: 300px;
-		margin-bottom: 2rem;
-		margin-right: 3rem;
+		height: 400px;
+		width: 600px;
 		transition: all 0.6s ease;
 	}
 
 	.container:hover {
-		transform: scale(1.1);
-		--underline-color: #000000;
+		transform: scale(1.05);
 		--text-color: #ffffff;
 	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
 	.description {
+		background-color: var(--tertiary-100);
+		padding: 0.9em;
 		position: absolute;
-		top: 180px;
-		left: 35px;
+		left: 0px;
+		bottom: 0px;
 		text-align: right;
-		width: 18rem;
+		width: auto;
 		float: right;
 	}
 
 	.heading {
 		color: var(--text-color);
-		display: inline;
-		--underline-width-scale: calc(var(--underline-width) / var(--underline-intrinsic-width));
-		padding: 0
-			calc(
-				var(--underline-padding-x) + calc(var(--underline-cap-width) * var(--underline-width-scale))
-			);
-		box-decoration-break: clone;
-		background-repeat: no-repeat;
-		background-image: linear-gradient(180deg, var(--underline-color), var(--underline-color));
-		background-position-x: calc(var(--underline-cap-width) * var(--underline-width-scale)), 0, 100%;
-		background-position-y: calc(100% - var(--underline-offset-y) * -1);
-		background-size: calc(
-					100% - calc(var(--underline-cap-width) * var(--underline-width-scale) * 2)
-				)
-				calc(var(--underline-width) * 1px),
-			auto calc(var(--underline-width) * 1px), auto calc(var(--underline-width) * 1px);
 	}
 
-	h3 {
+	h4 {
 		color: var(--text-color);
-		margin-top: 1rem;
 	}
 </style>

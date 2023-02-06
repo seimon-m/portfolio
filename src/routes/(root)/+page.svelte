@@ -60,7 +60,7 @@
 	.content {
 		position: relative;
 		width: 95%;
-		/* max-width: 1200px; */
+		max-width: 2000px;
 		height: 100%;
 		box-sizing: border-box;
 	}
@@ -94,7 +94,6 @@
 		width: 2px;
 		height: 59px;
 		background-color: rgb(0, 0, 0);
-		transform: scaleY(0);
 		transform-origin: bottom center;
 	}
 
@@ -140,8 +139,19 @@
 	}
 
 	.work-wrapper {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
+		display: grid;
+		gap: 1.5rem;
+		grid-template-columns: 1fr;
+	}
+	@media (min-width: 80em) {
+		.work-wrapper {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (min-width: 120em) {
+		.work-wrapper {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
 	}
 </style>

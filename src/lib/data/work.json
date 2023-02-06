@@ -4,7 +4,7 @@
 		"title": "Don't Answer Be Happy",
 		"tags": "installation",
 		"abstract": "Die Installation ”Don’t Answer Be Happy” schafft einen interaktiven Erfahrungsraum, in dem sich alles um das persönliche Smartphone dreht. Das Smartphone tritt in einen Dialog mit dem Raum und die Besuchenden werden aufgefordert, Haltung zu beziehen. Es entstehen Konfrontationen mit der Zwiespältigkeit der digitalen Realität, ein Abwenden ist nicht möglich. Der Erfahrungsraum trägt zur Reflexion der digitalen Kolonialisierung von Menschen und Regionen dieser Welt bei, welche nicht in den weltweiten TechHotspots zuhause sind.",
-		"team": "lorem ipsum",
+		"team": "Simon Müller, Jonas Wolter",
 		"images": {
 			"image0": "/images/Don't-Answer-Be-Happy/Bild-WWWerkschau-1.jpg",
 			"image1": "/images/Don't-Answer-Be-Happy/Bild-WWWerkschau-2.jpg",
@@ -20,8 +20,8 @@
 		"id": 1,
 		"title": "Flushway",
 		"tags": "website",
-		"abstract": "lorem ipsum",
-		"team": "lorem ipsum",
+		"abstract": "What happens to the wastewater when you press the flush button? In our web project we tell what happens to the waste water as soon as it leaves the house. We show it's way on a map. From your own home through the sewers to the Waste Water Treatment Plant and then to the Reuss river near Lucerne.",
+		"team": "Simon Müller, Chiara Kühne, Silja Bossert",
 		"images": {
 			"image0": "/images/Flushway/flushway-screenshot_01.png",
 			"image1": "/images/Flushway/flushway-screenshot_02.png",
@@ -34,8 +34,8 @@
 		"id": 2,
 		"title": "curious.images",
 		"tags": "website",
-		"abstract": "lorem ipsum",
-		"team": "lorem ipsum",
+		"abstract": "Für Weltraumenthusiasten ist curious.image der Ort, wo der Planet Mars visuell erforscht werden kann. Gegenüber bestehenden Scienceplattformen bieten wir einen minimalistischen und einfachen Zugang zu den unzähligen Fotogarfien vom Mars Rover Curiousity.",
+		"team": "Simon Müller, Ben Siegenthaler",
 		"images": {
 			"image0": "/images/curious.images/screenshot_1.png",
 			"image1": "/images/curious.images/screenshot_2.png",
@@ -50,10 +50,15 @@
 	},
 	{
 		"id": 3,
-		"title": "Ahoi",
-		"tags": "website",
-		"abstract": "lorem ipsum",
-		"team": "lorem ipsum"
+		"title": "Träum von mir",
+		"tags": "Multimedia Art Concert",
+		"abstract": "Wir werden flirten, uns langsam nähern, uns angeregt berühren, uns leidenschaftlich küssen, uns ineinander verlieren, uns heiss und lebendig fühlen, uns wieder zärtlich streicheln und dann doch nur träumen. Träum von mir vereint experimentelle Klänge mit dynamischen Visuals und nimmt dich auf eine immersive Reise in die Tiefen einer sinnlichen Welt mit. ",
+		"team": "Visuals & Konzept: Jonas Wolter, Simon Müller, Eliya Maria Pagelli Musik: Juan Contreras - Saxophone Soprano Nadine Speziga - Saxophone Bariton Flora Karetka - Querflöte",
+		"images": {
+			"image0": "/images/Traeum-von-mir/traeum-von-mir_1.jpg",
+			"image1": "/images/Traeum-von-mir/traeum-von-mir_2.jpg",
+			"image2": "/images/Traeum-von-mir/traeum-von-mir_3.jpg"
+		}
 	},
 	{
 		"id": 4,

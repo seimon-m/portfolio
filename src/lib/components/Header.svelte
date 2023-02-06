@@ -20,7 +20,7 @@
 		justify-content: space-between;
 		width: 95%;
 		height: 11vh;
-		/* max-width: 1200px; */
+		max-width: 2000px;
 		align-items: center;
 	}
 
