@@ -140,16 +140,17 @@
 
 	.work-wrapper {
 		display: grid;
+		margin: 0 auto;
 		gap: 1.5rem;
 		grid-template-columns: 1fr;
 	}
-	@media (min-width: 80em) {
+	@media (min-width: 60em) {
 		.work-wrapper {
 			grid-template-columns: 1fr 1fr;
 		}
 	}
 
-	@media (min-width: 120em) {
+	@media (min-width: 92em) {
 		.work-wrapper {
 			grid-template-columns: 1fr 1fr 1fr;
 		}

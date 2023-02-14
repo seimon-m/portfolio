@@ -27,8 +27,8 @@
 	.container {
 		background-color: antiquewhite;
 		position: relative;
-		height: 400px;
-		width: 600px;
+		height: 24rem;
+		min-width: 300px;
 		transition: all 0.6s ease;
 	}
 
@@ -60,5 +60,6 @@
 
 	h4 {
 		color: var(--text-color);
+		line-height: 0.8em;
 	}
 </style>
