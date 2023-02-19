@@ -25,7 +25,7 @@
 		--text-color: #000000;
 	}
 	.container {
-		background-color: antiquewhite;
+		/* background-color: antiquewhite; */
 		position: relative;
 		height: 24rem;
 		min-width: 300px;
@@ -61,5 +61,9 @@
 	h4 {
 		color: var(--text-color);
 		line-height: 0.8em;
+	}
+
+	a:hover {
+		border-radius: 0;
 	}
 </style>

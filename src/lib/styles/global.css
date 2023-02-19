@@ -71,17 +71,29 @@ a {
 	font-family: 'Raleway', sans-serif;
 	font-style: normal;
 	font-weight: 100;
-	line-height: 114%;
+	line-height: 120%;
 	font-size: clamp(1rem, calc(10px + 0.6vw), 1.5rem);
 	text-decoration: underline;
+	text-underline-offset: 0.4em;
 	color: var(--font);
+	padding: 0.4em;
+	height: 20px;
+}
+
+a:hover {
+	text-decoration: none;
+	border: 1px solid var(--font);
+	border-radius: 26px;
+	padding: 0.4em;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 p {
 	font-family: 'Raleway', sans-serif;
 	font-style: normal;
 	font-weight: 100;
-	line-height: 114%;
+	line-height: 120%;
 	/* font-size: 1rem; */
 	font-size: clamp(1rem, calc(10px + 0.6vw), 1.5rem);
 }

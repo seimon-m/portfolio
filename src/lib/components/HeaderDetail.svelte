@@ -5,7 +5,7 @@
 <div class="header">
 	<div class="wrapper">
 		<h5>Portfolio Simon Müller</h5>
-		<a class="button" href="/#work">
+		<a class="button" href="#work">
 			<p>works</p>
 			<img src={arrow} alt="an arrow" />
 		</a>
