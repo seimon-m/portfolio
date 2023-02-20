@@ -6,11 +6,12 @@
 <div class="about">
 	<img src={simon} alt="portrait of simon müller" width="250" />
 	<div class="intro">
+		<h3>I'm Simon,</h3>
 		<p class="intro__text">
-			I'm Simon, a multi-talented designer, web developer, and media artist based in Bern,
-			Switzerland. My work transcends the boundaries of the screen, exploring the space beyond and
-			blurring the lines between the physical and the digital. My goal is always to craft immersive
-			experiences that captivate people.
+			a multi-talented designer, web developer, and media artist based in Bern, Switzerland. My work
+			transcends the boundaries of the screen, exploring the space beyond and blurring the lines
+			between the physical and the digital. My goal is always to craft immersive experiences that
+			captivate people.
 		</p>
 		<p />
 		<p class="intro__text">
@@ -23,16 +24,10 @@
 			My process is rooted in collaboration, allowing me to craft bespoke solutions that resonate
 			with each individual client. Explore my portfolio to get a sense of my work, and feel free to
 			reach out if you're interested in collaborating. Let's create something beautiful together.
-			Simon
 		</p>
 	</div>
-	<div class="contact buttons">
-		<a href={cv} target="_blank" rel="noreferrer">Download CV</a>
-		<a href="mailto:hey@seimon.ch" target="_blank" rel="noreferrer">Contact me</a>
-	</div>
-
 	<div class="passion">
-		<h3>Things I am passionate about:</h3>
+		<h3>Things I am passionate about</h3>
 		<ul>
 			<li>Webdevelopment</li>
 			<li>Webdesign</li>
@@ -46,7 +41,9 @@
 	</div>
 
 	<div class="social buttons">
-		<a href="mailto:hey@seimon.ch" target="_blank" rel="noreferrer">Mail</a>
+		<h3>Get in touch</h3>
+		<a href={cv} target="_blank" rel="noreferrer">Download CV</a>
+		<a href="mailto:hey@seimon.ch" target="_blank" rel="noreferrer">Contact me</a>
 		<a href="https://github.com/seimon-m" target="_blank" rel="noreferrer">GitHub</a>
 		<a href="https://www.linkedin.com/in/seimon-m/" target="_blank" rel="noreferrer">LinkedIn</a>
 	</div>
@@ -60,11 +57,23 @@
 		grid-template-columns: 1fr;
 	}
 
+	@media (min-width: 60em) {
+		.about {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (min-width: 92em) {
+		.about {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+
 	.about > * {
 		/* background-color: aliceblue; */
 	}
 	.intro {
-		border: 0.5px solid black;
+		/* border: 0.5px solid black; */
 		padding: 1em;
 	}
 
@@ -76,7 +85,6 @@
 	}
 
 	.passion {
-		border: 0.5px solid black;
 		padding: 1em;
 	}
 
@@ -88,14 +96,15 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		max-height: 30em;
 	}
 	h3 {
 		font-size: 48px;
-		text-align: end;
 		margin-bottom: 0.5em;
 	}
 
 	li {
-		text-align: end;
+		padding: 1em 0 1em 0;
+		border-top: 0.5px solid black;
 	}
 </style>

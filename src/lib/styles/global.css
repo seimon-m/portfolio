@@ -78,15 +78,12 @@ a {
 	color: var(--font);
 	padding: 0.4em;
 	height: 20px;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-	text-decoration: none;
-	border: 1px solid var(--font);
-	border-radius: 26px;
-	padding: 0.4em;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	text-underline-offset: -1.1em;
 }
 
 p {

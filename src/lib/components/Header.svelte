@@ -40,8 +40,13 @@
 		color: black;
 	} */
 
+	a {
+		border: 0;
+		padding: 0;
+	}
+
 	a:hover {
-		color: var(--secondary-100);
+		/* color: var(--secondary-100); */
 	}
 
 	@media screen and (max-width: 550px) {

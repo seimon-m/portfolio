@@ -64,6 +64,6 @@
 	}
 
 	a:hover {
-		border-radius: 0;
+		border: 0;
 	}
 </style>
