@@ -65,7 +65,7 @@
 	.about > * {
 		/* background-color: aliceblue; */
 	}
-	.intro {
+	.card {
 		/* border: 0.5px solid black; */
 		padding: 1em;
 	}
@@ -84,6 +84,7 @@
 	.social > a {
 		display: inline-block;
 		margin-bottom: 0.5em;
+		margin-left: 0;
 	}
 
 	h3 {

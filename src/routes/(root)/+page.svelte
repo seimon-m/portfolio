@@ -51,7 +51,7 @@
 <style>
 	.container {
 		background-color: var(--primary-100);
-		padding: 10vh 0vw;
+		padding-top: 10vh;
 		box-sizing: border-box;
 		position: relative;
 		display: flex;
