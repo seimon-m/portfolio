@@ -126,11 +126,13 @@
 	}
 
 	.section-title {
-		position: absolute;
+		position: sticky;
 		z-index: 1;
 		transform-origin: top left;
 		left: 0;
 		top: 0;
+		margin-right: 9em;
+		width: fit-content;
 		transform: rotate(-90deg) translateX(-120%) translateY(-50%);
 	}
 

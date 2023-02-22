@@ -4,8 +4,7 @@
 </script>
 
 <div class="about">
-	<img src={simon} alt="portrait of simon müller" width="250" />
-	<div class="intro">
+	<div class="intro card">
 		<h3>I'm Simon,</h3>
 		<p class="intro__text">
 			a multi-talented designer, web developer, and media artist based in Bern, Switzerland. My work
@@ -26,7 +25,7 @@
 			reach out if you're interested in collaborating. Let's create something beautiful together.
 		</p>
 	</div>
-	<div class="passion">
+	<div class="passion card">
 		<h3>Things I am passionate about</h3>
 		<ul>
 			<li>Webdevelopment</li>
@@ -40,7 +39,7 @@
 		</ul>
 	</div>
 
-	<div class="social buttons">
+	<div class="social card">
 		<h3>Get in touch</h3>
 		<a href={cv} target="_blank" rel="noreferrer">Download CV</a>
 		<a href="mailto:hey@seimon.ch" target="_blank" rel="noreferrer">Contact me</a>
@@ -52,7 +51,7 @@
 <style>
 	.about {
 		display: grid;
-		margin: 0 auto;
+		margin-left: 3em;
 		gap: 1.5rem;
 		grid-template-columns: 1fr;
 	}
@@ -60,12 +59,6 @@
 	@media (min-width: 60em) {
 		.about {
 			grid-template-columns: 1fr 1fr;
-		}
-	}
-
-	@media (min-width: 92em) {
-		.about {
-			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
 
@@ -88,16 +81,11 @@
 		padding: 1em;
 	}
 
-	.buttons {
-		margin: 0 auto;
+	.social > a {
+		display: inline-block;
+		margin-bottom: 0.5em;
 	}
 
-	img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		max-height: 30em;
-	}
 	h3 {
 		font-size: 48px;
 		margin-bottom: 0.5em;
@@ -106,5 +94,11 @@
 	li {
 		padding: 1em 0 1em 0;
 		border-top: 0.5px solid black;
+		transition: all 0.4s ease-in-out;
+	}
+
+	li:hover {
+		background-color: var(--primary-100);
+		box-shadow: inset 0px 11px 8px -10px #aa98be, inset 0px -11px 8px -10px #aa98be;
 	}
 </style>

@@ -30,23 +30,10 @@
 		align-items: flex-start;
 	}
 
-	/* a {
-		text-decoration: none;
-		width: calc(50px + 6vw);
-		-webkit-transition: all 0.2s ease-in-out;
-		transition: all 0.2s ease-in-out;
-		display: inline-block;
-		text-align: center;
-		color: black;
-	} */
-
 	a {
 		border: 0;
 		padding: 0;
-	}
-
-	a:hover {
-		/* color: var(--secondary-100); */
+		margin: 0;
 	}
 
 	@media screen and (max-width: 550px) {

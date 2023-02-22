@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Raleway:wght@100;200;300;600;700&display=swap');
 
 :root {
-	--primary-100: #fdc5ea;
-	--secondary-100: rgb(243, 243, 216);
-	--tertiary-100: #9aeceb;
+	--primary-100: #cfb5ea;
+	--secondary-100: #fdcd9f;
+	--tertiary-100: #c87992;
 	--font: #000000;
 	--pure-white: #ffffff;
 	--black-100: #2c2a27;
@@ -38,6 +38,8 @@ h2 {
 	font-family: 'Raleway', sans-serif;
 	font-style: normal;
 	font-weight: 700;
+	background-color: #fdcd9f;
+	padding: 0.1em 0.3em;
 	/* font-size: 6rem; */
 	font-size: clamp(10px, calc(60px + 1.5vw), 180px);
 }
@@ -76,14 +78,14 @@ a {
 	text-decoration: underline;
 	text-underline-offset: 0.4em;
 	color: var(--font);
-	padding: 0.4em;
+	margin: 0.4em;
+	padding: 0.3em 0 0.3em 0;
 	height: 20px;
-	-webkit-transition: all 0.4s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-	text-underline-offset: -1.1em;
+	text-underline-offset: -1.05em;
 }
 
 p {

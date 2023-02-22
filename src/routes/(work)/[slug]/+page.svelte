@@ -59,6 +59,7 @@
 
 	h2 {
 		overflow-wrap: break-word;
+		background-color: transparent;
 	}
 
 	img {
