@@ -54,12 +54,13 @@
 		width: 100vw;
 		flex-direction: column;
 		transform: translate(-2.5%, 0);
-		z-index: 1;
+		z-index: 10;
 	}
 
 	h2 {
 		overflow-wrap: break-word;
 		background-color: transparent;
+		padding-left: 0;
 	}
 
 	img {

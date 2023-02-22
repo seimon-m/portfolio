@@ -5,7 +5,7 @@
 <div class="header">
 	<div class="wrapper">
 		<h5>Portfolio Simon Müller</h5>
-		<a class="button" href="#work">
+		<a class="button" href="/#work">
 			<p>works</p>
 			<img src={arrow} alt="an arrow" />
 		</a>
@@ -21,7 +21,7 @@
 		top: 0;
 		position: sticky;
 		padding-bottom: 2vh;
-		z-index: -1;
+		z-index: 2;
 	}
 	.wrapper {
 		display: flex;
@@ -47,6 +47,7 @@
 		padding-right: 3vw;
 		text-decoration: none;
 		min-height: 25px;
+		margin: 0;
 	}
 
 	.button > img {
@@ -55,5 +56,9 @@
 	.button > p {
 		text-align: center;
 		margin: auto 0 auto 0;
+	}
+
+	.button:hover {
+		background-color: var(--secondary-100);
 	}
 </style>
