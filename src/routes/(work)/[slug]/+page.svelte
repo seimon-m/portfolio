@@ -37,16 +37,23 @@
 	}
 
 	.infos {
-		margin-bottom: 4vh;
-		top: 15vh;
 		position: sticky;
+		top: 12vh;
+		height: 88vh;
+		overflow-y: auto;
+		scrollbar-width: none;
 	}
 
 	.infos > p {
 		margin-top: 4vh;
+		margin-bottom: 2em;
 		text-align: justify;
 		text-align-last: none;
 		hyphens: auto;
+	}
+
+	.infos > h2 {
+		margin-top: 0.5em;
 	}
 
 	.images {
@@ -74,7 +81,7 @@
 
 		.infos {
 			width: 40vw;
-			height: 100vh;
+			height: 85vh;
 		}
 
 		.images {

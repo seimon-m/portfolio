@@ -15,20 +15,20 @@
 <style>
 	.header {
 		display: flex;
-		height: 13vh;
+		height: 12vh;
 		justify-content: center;
 		background-color: var(--primary-100);
 		top: 0;
 		position: sticky;
-		padding-bottom: 2vh;
 		z-index: 2;
 	}
 	.wrapper {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: flex-start;
 		width: 95%;
+		height: 100%;
 	}
 
 	h5 {
