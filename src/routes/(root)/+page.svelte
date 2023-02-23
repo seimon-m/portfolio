@@ -34,7 +34,10 @@
 			</div>
 		</div>
 		<div class="section work" id="work">
-			<h2 class="section-title">work</h2>
+			<div class="section-title">
+				<h2>work</h2>
+			</div>
+
 			<div class="work-wrapper">
 				{#each work as project}
 					<WorkPreview {project} />
@@ -133,7 +136,15 @@
 		top: 0;
 		margin-right: 9em;
 		width: fit-content;
-		transform: rotate(-90deg) translateX(-120%) translateY(-50%);
+		transform: rotate(-90deg) translateX(-120%) translateY(-40%);
+		border-radius: 0 0 20px 20px;
+		box-sizing: border-box;
+		overflow: hidden;
+		background: rgba(253, 205, 159, 0.57);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(3.4px);
+		-webkit-backdrop-filter: blur(3.4px);
+		border: 1px solid rgba(253, 205, 159, 0.35);
 	}
 
 	.start-title {
@@ -146,6 +157,7 @@
 		gap: 1.5rem;
 		grid-template-columns: 1fr;
 	}
+
 	@media (min-width: 60em) {
 		.work-wrapper {
 			grid-template-columns: 1fr 1fr;

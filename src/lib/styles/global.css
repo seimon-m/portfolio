@@ -38,7 +38,6 @@ h2 {
 	font-family: 'Raleway', sans-serif;
 	font-style: normal;
 	font-weight: 700;
-	background-color: #fdcd9f;
 	padding: 0.1em 0.3em;
 	/* font-size: 6rem; */
 	font-size: clamp(10px, calc(60px + 1.5vw), 180px);
