@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	import { onMount } from 'svelte';
 	import workList from '$lib/data/work.json';
 
 	let currentProjectTitle = $page.params.slug;
@@ -11,20 +10,6 @@
 			currentProject = work;
 		}
 	});
-	let infos;
-
-	onMount(() => {
-		infos.addEventListener('scroll', (event) => {
-			console.log('scrolled');
-			scrollbar_class = 'show_scrollbar';
-			setTimeout(() => {
-				console.log('waiting...');
-				scrollbar_class = 'hide_scrollbar';
-			}, 2000);
-		});
-	});
-
-	$: scrollbar_class = 'hide_scrollbar';
 </script>
 
 <svelte:head>
@@ -32,7 +17,7 @@
 </svelte:head>
 
 <div class="wrapper">
-	<div class={scrollbar_class + ' infos'} bind:this={infos}>
+	<div class="infos">
 		<h2>{currentProject.title}</h2>
 		<p>{currentProject.abstract}</p>
 	</div>
@@ -73,15 +58,8 @@
 		/* Scrollbar styling for Firefox */
 		scrollbar-color: var(--tertiary-100) var(--primary-100);
 		scrollbar-width: thin;
+		scrollbar-gutter: stable;
 	}
-
-	/* .show_scrollbar {
-		scrollbar-width: auto;
-	}
-
-	.hide_scrollbar {
-		scrollbar-width: none;
-	} */
 
 	.infos > p {
 		margin-top: 4vh;
