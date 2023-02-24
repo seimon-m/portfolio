@@ -39,13 +39,13 @@
 	.button {
 		display: flex;
 		flex-direction: row-reverse;
-		justify-content: space-around;
+		justify-content: space-between;
 		width: 100px;
 		height: 30px;
 		border: 1px solid var(--pure-black);
 		border-radius: 26px;
-		padding-left: 3vw;
-		padding-right: 3vw;
+		padding-left: 1em;
+		padding-right: 1em;
 		text-decoration: none;
 		min-height: 25px;
 		margin: 0;

@@ -2,7 +2,7 @@
 	<div class="wrapper">
 		<h5>Simon Müller</h5>
 		<div class="link-wrapper">
-			<p>AVAILABLE FOR FREELANCE WORK</p>
+			<p>Available for freelance work</p>
 			<a class="link" target="_blank" href="mailto:hey@seimon.ch">hey@seimon.ch</a>
 		</div>
 	</div>
