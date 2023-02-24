@@ -17,6 +17,21 @@
 html {
 	font-size: 16px;
 	color: var(--font);
+	/* Scrollbar styling for Firefox */
+	scrollbar-color: var(--tertiary-100) var(--primary-100);
+	scrollbar-width: thin;
+}
+html::-webkit-scrollbar {
+	width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+	background: var(--primary-100);
+}
+
+html::-webkit-scrollbar-thumb {
+	background-color: var(--tertiary-100);
+	border-radius: 20px;
 }
 
 body {

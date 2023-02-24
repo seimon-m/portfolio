@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
 	import workList from '$lib/data/work.json';
 
 	let currentProjectTitle = $page.params.slug;
@@ -10,6 +11,20 @@
 			currentProject = work;
 		}
 	});
+	let infos;
+
+	onMount(() => {
+		infos.addEventListener('scroll', (event) => {
+			console.log('scrolled');
+			scrollbar_class = 'show_scrollbar';
+			setTimeout(() => {
+				console.log('waiting...');
+				scrollbar_class = 'hide_scrollbar';
+			}, 2000);
+		});
+	});
+
+	$: scrollbar_class = 'hide_scrollbar';
 </script>
 
 <svelte:head>
@@ -17,7 +32,7 @@
 </svelte:head>
 
 <div class="wrapper">
-	<div class="infos">
+	<div class={scrollbar_class + ' infos'} bind:this={infos}>
 		<h2>{currentProject.title}</h2>
 		<p>{currentProject.abstract}</p>
 	</div>
@@ -35,18 +50,42 @@
 		display: flex;
 		flex-direction: column;
 	}
+	.infos::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	.infos::-webkit-scrollbar-track {
+		background: var(--primary-100);
+	}
+
+	.infos::-webkit-scrollbar-thumb {
+		background-color: var(--tertiary-100);
+		border-radius: 20px;
+	}
 
 	.infos {
 		position: sticky;
 		top: 12vh;
 		height: 88vh;
 		overflow-y: auto;
-		scrollbar-width: none;
+
+		/* Scrollbar styling for Firefox */
+		scrollbar-color: var(--tertiary-100) var(--primary-100);
+		scrollbar-width: thin;
 	}
+
+	/* .show_scrollbar {
+		scrollbar-width: auto;
+	}
+
+	.hide_scrollbar {
+		scrollbar-width: none;
+	} */
 
 	.infos > p {
 		margin-top: 4vh;
 		margin-bottom: 2em;
+		margin-right: 1em;
 		text-align: justify;
 		text-align-last: none;
 		hyphens: auto;

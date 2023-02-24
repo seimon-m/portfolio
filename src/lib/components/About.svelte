@@ -77,10 +77,6 @@
 		margin-bottom: 0;
 	}
 
-	.passion {
-		padding: 1em;
-	}
-
 	.social > a {
 		display: inline-block;
 		margin-bottom: 0.5em;
@@ -101,5 +97,16 @@
 	li:hover {
 		background-color: var(--primary-100);
 		box-shadow: inset 0px 11px 8px -10px #aa98be, inset 0px -11px 8px -10px #aa98be;
+	}
+
+	@media (min-width: 60em) {
+		.card {
+			padding: 2em;
+		}
+	}
+	@media (min-width: 92em) {
+		.card {
+			padding: 3em;
+		}
 	}
 </style>
