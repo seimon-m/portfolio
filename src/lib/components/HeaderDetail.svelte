@@ -14,6 +14,7 @@
 
 <style>
 	.header {
+		position: relative;
 		display: flex;
 		height: 12vh;
 		justify-content: center;

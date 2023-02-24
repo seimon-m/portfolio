@@ -49,6 +49,7 @@
 	.wrapper {
 		display: flex;
 		flex-direction: column;
+		position: relative;
 	}
 	.infos::-webkit-scrollbar {
 		width: 10px;
@@ -96,6 +97,7 @@
 	}
 
 	.images {
+		position: relative;
 		display: flex;
 		width: 100vw;
 		flex-direction: column;
@@ -111,9 +113,10 @@
 
 	img {
 		margin-top: 1vh;
+		z-index: 10;
 	}
 
-	@media screen and (min-width: 600px) {
+	@media screen and (min-width: 80em) {
 		.wrapper {
 			flex-direction: row;
 		}
