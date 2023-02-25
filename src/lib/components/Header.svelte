@@ -46,4 +46,16 @@
 			padding-top: 10px;
 		}
 	}
+
+	@media (min-width: 60em) {
+		.wrapper {
+			width: 85%;
+		}
+	}
+
+	@media (min-width: 92em) {
+		.wrapper {
+			width: 90%;
+		}
+	}
 </style>

@@ -34,9 +34,7 @@
 			</div>
 		</div>
 		<div class="section work" id="work">
-			<div class="section-title">
-				<h2>work</h2>
-			</div>
+			<h2 class="section-title">work</h2>
 
 			<div class="work-wrapper">
 				{#each work as project}
@@ -63,6 +61,7 @@
 	.content {
 		position: relative;
 		width: 95%;
+		margin-left: 0 auto;
 		max-width: 2000px;
 		height: 100%;
 		box-sizing: border-box;
@@ -126,6 +125,7 @@
 	.section {
 		position: relative;
 		margin-bottom: 10rem;
+		padding-left: 3.5em;
 	}
 
 	.section-title {
@@ -133,11 +133,12 @@
 		z-index: 1;
 		transform-origin: top left;
 		left: 0;
-		top: 0;
-		margin-right: 9em;
+		top: 100px;
 		width: fit-content;
-		transform: rotate(-90deg) translateX(-120%) translateY(-40%);
-		border-radius: 0 0 20px 20px;
+		padding: 0 0.3em;
+		padding-top: 50px;
+		transform: rotate(-90deg) translateX(-159.5%) translateY(-105%);
+		border-radius: 0 0 13px 13px;
 		box-sizing: border-box;
 		overflow: hidden;
 		background: rgba(253, 205, 159, 0.57);
@@ -154,19 +155,31 @@
 	.work-wrapper {
 		display: grid;
 		margin: 0 auto;
-		gap: 1.5rem;
+		/* gap: 5rem; */
 		grid-template-columns: 1fr;
 	}
 
 	@media (min-width: 60em) {
-		.work-wrapper {
-			grid-template-columns: 1fr 1fr;
+		.content {
+			width: 85%;
+		}
+
+		.section {
+			padding-left: 0;
+		}
+
+		.section-title {
+			transform: rotate(-90deg) translateX(-150%) translateY(-110%);
 		}
 	}
 
 	@media (min-width: 92em) {
-		.work-wrapper {
-			grid-template-columns: 1fr 1fr 1fr;
+		.content {
+			width: 90%;
+		}
+
+		.section-title {
+			transform: rotate(-90deg) translateX(-154%) translateY(-105%);
 		}
 	}
 </style>

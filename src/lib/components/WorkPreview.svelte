@@ -15,24 +15,18 @@
 </a>
 
 <style>
-	:root {
-		--underline-intrinsic-width: 8;
-		--underline-width: 12;
-		--underline-color: #ffffff;
-		--underline-cap-width: 4px;
-		--underline-offset-y: -2px;
-		--underline-padding-x: 0.12em;
-		--text-color: #000000;
-	}
 	.container {
+		display: block;
 		/* background-color: antiquewhite; */
-		position: relative;
-		height: 24rem;
-		min-width: 300px;
+		/* position: relative; */
+		/* min-height: 300px; */
+		/* min-width: 300px; */
 		transition: all 0.6s ease;
+		text-decoration: none;
+		margin-bottom: 1.3rem;
 	}
 
-	.container:hover {
+	/* .container:hover {
 		box-shadow: 0.2px 0.2px 0.3px hsl(270deg 29% 50% / 0.4),
 			0.7px 0.6px 0.9px -0.4px hsl(270deg 29% 50% / 0.37),
 			1.3px 1px 1.6px -0.8px hsl(270deg 29% 50% / 0.35),
@@ -43,40 +37,36 @@
 			12px 9.2px 14.4px -2.8px hsl(270deg 29% 50% / 0.22),
 			17.1px 13px 20.5px -3.2px hsl(270deg 29% 50% / 0.2),
 			23.5px 18px 28.2px -3.6px hsl(270deg 29% 50% / 0.17);
-		transform: scale(1.05);
 		--text-color: #ffffff;
-	}
+		background-color: var(--tertiary-100);
+	} */
 
 	img {
 		width: 100%;
-		height: 100%;
+		/* height: 250px; */
+		aspect-ratio: 3 / 1.95;
 		object-fit: cover;
 	}
 
 	.description {
-		background-color: var(--tertiary-100);
-		padding: 0.9em;
-		position: absolute;
-		left: 0px;
-		bottom: 0px;
-		text-align: right;
-		width: auto;
-		float: right;
+		display: flex;
+		justify-content: end;
 	}
 
 	.heading {
-		color: var(--text-color);
-	}
-
-	h4 {
-		color: var(--text-color);
-		line-height: 0.8em;
+		color: var(--font);
+		line-height: 0.9em;
+		/* background-color: var(--tertiary-100); */
+		padding: 0.2em 0em;
+		width: fit-content;
+		text-align: end;
 	}
 
 	a {
 		border: 0;
 		margin: 0;
 		padding: 0;
+		height: auto;
 		/* background-color: var(--primary-100); */
 	}
 </style>
