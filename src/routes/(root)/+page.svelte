@@ -60,7 +60,7 @@
 	}
 	.content {
 		position: relative;
-		width: 95%;
+		/* width: 97%; */
 		margin-left: 0 auto;
 		max-width: 2000px;
 		height: 100%;
@@ -124,24 +124,24 @@
 
 	.section {
 		position: relative;
-		margin-bottom: 10rem;
-		padding-left: 3.5em;
+		margin: 0.5em;
+		margin-bottom: 6rem;
 	}
 
 	.section-title {
 		position: sticky;
+		transform: rotate(-90deg) translateX(-190%) translateY(-10%);
 		z-index: 1;
 		transform-origin: top left;
 		left: 0;
-		top: 100px;
+		top: 0px;
 		width: fit-content;
-		padding: 0 0.3em;
-		padding-top: 50px;
-		transform: rotate(-90deg) translateX(-159.5%) translateY(-105%);
+		margin-right: 200px;
 		border-radius: 0 0 13px 13px;
+		padding: 0.05em 0.2em;
 		box-sizing: border-box;
 		overflow: hidden;
-		background: rgba(253, 205, 159, 0.57);
+		background: rgba(253, 205, 159, 0.65);
 		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 		backdrop-filter: blur(3.4px);
 		-webkit-backdrop-filter: blur(3.4px);
@@ -160,9 +160,9 @@
 	}
 
 	@media (min-width: 60em) {
-		.content {
+		/* .content {
 			width: 85%;
-		}
+		} */
 
 		.section {
 			padding-left: 0;
@@ -174,9 +174,9 @@
 	}
 
 	@media (min-width: 92em) {
-		.content {
+		/* .content {
 			width: 90%;
-		}
+		} */
 
 		.section-title {
 			transform: rotate(-90deg) translateX(-154%) translateY(-105%);

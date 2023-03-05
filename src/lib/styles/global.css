@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Raleway:wght@100;200;300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Karla:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;600;700&display=swap');
 
 :root {
 	--primary-100: #cfb5ea;
@@ -35,7 +35,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Karla', sans-serif;
 	margin: 0;
 	background-color: var(--primary-100);
 }
@@ -50,10 +50,9 @@ h1 {
 }
 
 h2 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Karla', sans-serif;
 	font-style: normal;
-	font-weight: 700;
-	padding: 0.1em 0.3em;
+	font-weight: 500;
 	/* font-size: 6rem; */
 	font-size: clamp(10px, calc(60px + 1.5vw), 180px);
 }
@@ -68,7 +67,7 @@ h3 {
 }
 
 h4 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Karla', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	/* font-size: 2.5rem; */
@@ -76,7 +75,7 @@ h4 {
 }
 
 h5 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Karla', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	/* font-size: 1.4rem; */
@@ -84,7 +83,7 @@ h5 {
 }
 
 a {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Karla', sans-serif;
 	font-style: normal;
 	font-weight: 100;
 	line-height: 120%;
@@ -103,16 +102,16 @@ a:hover {
 }
 
 p {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Karla', sans-serif;
 	font-style: normal;
-	font-weight: 100;
+	font-weight: 300;
 	line-height: 120%;
 	/* font-size: 1rem; */
 	font-size: clamp(1rem, calc(10px + 0.6vw), 1.2rem);
 }
 
 li {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Karla', sans-serif;
 	font-style: normal;
 	line-height: 114%;
 	font-weight: 100;
