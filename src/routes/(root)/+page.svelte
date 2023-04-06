@@ -24,7 +24,7 @@
 
 <div class="container">
 	<div class="content">
-		<div class="start">
+		<section class="start">
 			<h1 class="start-title">Media artist, Coder and Designer</h1>
 			<div class="scroll-indicator">
 				<p class="scroll-text">
@@ -32,8 +32,8 @@
 				</p>
 				<span style="z-index: 0;transform: matrix(1, 0, 0, 1, 0, 0);" />
 			</div>
-		</div>
-		<div class="section work" id="work">
+		</section>
+		<section class="section work" id="work">
 			<h2 class="section-title">work</h2>
 
 			<div class="work-wrapper">
@@ -41,42 +41,76 @@
 					<WorkPreview {project} />
 				{/each}
 			</div>
-		</div>
-		<div class="section about" id="about">
+		</section>
+		<section class="section about" id="about">
 			<h2 class="section-title">about</h2>
 			<About />
-		</div>
+		</section>
 	</div>
 </div>
 
 <style>
 	.container {
-		background-color: var(--primary-100);
+		background-color: var(--pure-white);
+		display: flex;
+		justify-content: center;
+
+		/* background-color: var(--primary-100);
 		padding-top: 10vh;
 		box-sizing: border-box;
 		position: relative;
 		display: flex;
-		justify-content: center;
+		justify-content: center; */
 	}
 	.content {
 		position: relative;
-		/* width: 97%; */
-		margin-left: 0 auto;
+		/* margin-left: 0 auto; */
 		max-width: 2000px;
-		height: 100%;
+		position: relative;
+		/* box-sizing: border-box; */
+	}
+
+	/* .section {
+		position: relative;
+		margin: 0.5em;
+		margin-bottom: 6rem;
+	}
+
+	.section-title {
+		position: sticky;
+		transform: rotate(-90deg) translateX(-190%) translateY(-10%);
+		z-index: 1;
+		transform-origin: top left;
+		left: 0;
+		top: 0px;
+		width: fit-content;
+		margin-right: 200px;
+		border-radius: 0 0 13px 13px;
+		padding: 0.05em 0.2em;
 		box-sizing: border-box;
+		overflow: hidden;
+		background: rgba(253, 205, 159, 0.65);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(3.4px);
+		-webkit-backdrop-filter: blur(3.4px);
+		border: 1px solid rgba(253, 205, 159, 0.35);
+	} */
+
+	.start-title {
+		margin-bottom: 15vh;
 	}
 
 	.start {
+		background-color: var(--primary-100);
 		position: relative;
-		height: 79vh;
+		height: 88vh;
 		display: flex;
 		align-items: center;
 	}
 
 	@supports (height: 100dvh) {
 		.start {
-			height: 79dvh;
+			height: 88dvh;
 		}
 	}
 
@@ -85,7 +119,7 @@
 		bottom: 0;
 		width: 100%;
 		left: 0;
-		z-index: 1;
+		/* z-index: 10; */
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -122,42 +156,12 @@
 		background-size: 100% 100%;
 	}
 
-	.section {
-		position: relative;
-		margin: 0.5em;
-		margin-bottom: 6rem;
-	}
-
-	.section-title {
-		position: sticky;
-		transform: rotate(-90deg) translateX(-190%) translateY(-10%);
-		z-index: 1;
-		transform-origin: top left;
-		left: 0;
-		top: 0px;
-		width: fit-content;
-		margin-right: 200px;
-		border-radius: 0 0 13px 13px;
-		padding: 0.05em 0.2em;
-		box-sizing: border-box;
-		overflow: hidden;
-		background: rgba(253, 205, 159, 0.65);
-		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-		backdrop-filter: blur(3.4px);
-		-webkit-backdrop-filter: blur(3.4px);
-		border: 1px solid rgba(253, 205, 159, 0.35);
-	}
-
-	.start-title {
-		margin-bottom: 15vh;
-	}
-
 	.work-wrapper {
-		display: grid;
-		margin: 0 auto;
+		/* display: grid; */
+		/* margin: 0 auto; */
 		/* gap: 5rem; */
-		grid-template-columns: 1fr;
-		scroll-snap-type: y proximity;
+		/* grid-template-columns: 1fr; */
+		/* scroll-snap-type: y proximity; */
 	}
 
 	@media (min-width: 60em) {
@@ -165,13 +169,13 @@
 			width: 85%;
 		} */
 
-		.section {
+		/* .section {
 			padding-left: 0;
-		}
+		} */
 
-		.section-title {
+		/* .section-title {
 			transform: rotate(-90deg) translateX(-150%) translateY(-110%);
-		}
+		} */
 	}
 
 	@media (min-width: 92em) {
@@ -179,8 +183,8 @@
 			width: 90%;
 		} */
 
-		.section-title {
+		/* .section-title {
 			transform: rotate(-90deg) translateX(-154%) translateY(-105%);
-		}
+		} */
 	}
 </style>

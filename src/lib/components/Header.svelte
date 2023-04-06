@@ -18,8 +18,8 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		width: 95%;
-		height: 11vh;
+		/* width: 95%; */
+		height: 10vh;
 		max-width: 2000px;
 		align-items: center;
 	}
