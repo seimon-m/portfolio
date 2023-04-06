@@ -9,24 +9,44 @@
 		<img src={'https://picsum.photos/250/350'} width="600" height="400" alt="random" />
 	{/if}
 
-	<div class="description">
+	<h4 class="heading">{project.title}</h4>
+	<!-- <div class="description">
 		<h4 class="heading">{project.title}</h4>
-	</div>
+		{project.title}
+	</div> -->
 </a>
 
 <style>
 	.container {
 		display: block;
 		position: relative;
-		/* background-color: antiquewhite; */
-		/* position: relative; */
-		/* min-height: 300px; */
-		/* min-width: 300px; */
+		height: auto;
+		aspect-ratio: 3 / 1.95;
 		border: none;
-		/* border-radius: 20%; */
 		transition: all 0.6s ease;
 		text-decoration: none;
 		margin-bottom: 1.3rem;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	.container::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		background: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.8) 0%,
+			rgba(0, 0, 0, 0.2) 20%,
+			rgba(0, 0, 0, 0) 100%
+		);
+	}
+
+	.container:hover {
+		opacity: 0.85;
 	}
 
 	/* .container:hover {
@@ -45,39 +65,28 @@
 	} */
 
 	img {
-		border-radius: 3%;
 		width: 100%;
-		/* height: 250px; */
 		aspect-ratio: 3 / 1.95;
 		object-fit: cover;
 	}
 
-	.description {
-		position: absolute;
-		display: flex;
-		justify-content: end;
-		bottom: auto auto;
-		margin: 2em 3em;
-		bottom: 0;
-		right: 0;
-	}
-
 	.heading {
+		position: absolute;
+		bottom: 10%;
+		right: 10%;
+		font-size: 3em;
+		font-weight: 600;
 		color: #ffffff;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+		z-index: 1;
 		line-height: 0.9em;
-		/* background-color: var(--tertiary-100); */
-		padding: 0.2em 0em;
 		width: fit-content;
 		text-align: end;
-		font-weight: 600;
-		font-size: 3em;
 	}
 
 	a {
 		border: 0;
 		margin: 0;
 		padding: 0;
-		height: auto;
-		/* background-color: var(--primary-100); */
 	}
 </style>

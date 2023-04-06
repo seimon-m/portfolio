@@ -157,6 +157,7 @@
 		margin: 0 auto;
 		/* gap: 5rem; */
 		grid-template-columns: 1fr;
+		scroll-snap-type: y proximity;
 	}
 
 	@media (min-width: 60em) {
