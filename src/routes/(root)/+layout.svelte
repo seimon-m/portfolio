@@ -9,7 +9,7 @@
 
 <style>
 	main {
-		background-color: aqua;
+		background-color: var(--white);
 		padding: 2vh 2vw;
 	}
 </style>

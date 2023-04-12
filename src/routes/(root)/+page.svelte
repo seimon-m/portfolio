@@ -51,23 +51,14 @@
 
 <style>
 	.container {
-		background-color: var(--pure-white);
+		background-color: var(--white);
 		display: flex;
 		justify-content: center;
-
-		/* background-color: var(--primary-100);
-		padding-top: 10vh;
-		box-sizing: border-box;
-		position: relative;
-		display: flex;
-		justify-content: center; */
 	}
 	.content {
 		position: relative;
-		/* margin-left: 0 auto; */
 		max-width: 2000px;
 		position: relative;
-		/* box-sizing: border-box; */
 	}
 
 	/* .section {
@@ -97,20 +88,21 @@
 	} */
 
 	.start-title {
-		margin-bottom: 15vh;
+		padding: 1rem;
 	}
 
 	.start {
 		background-color: var(--primary-100);
 		position: relative;
-		height: 88vh;
+		height: 83vh;
 		display: flex;
 		align-items: center;
+		border-radius: 0 0 10px 10px;
 	}
 
 	@supports (height: 100dvh) {
 		.start {
-			height: 88dvh;
+			height: 83dvh;
 		}
 	}
 
@@ -157,9 +149,9 @@
 	}
 
 	.work-wrapper {
-		/* display: grid; */
+		display: grid;
 		/* margin: 0 auto; */
-		/* gap: 5rem; */
+		gap: 1rem;
 		/* grid-template-columns: 1fr; */
 		/* scroll-snap-type: y proximity; */
 	}

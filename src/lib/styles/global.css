@@ -5,6 +5,7 @@
 	--secondary-100: #fdcd9f;
 	--tertiary-100: #c87992;
 	--font: #000000;
+	--white: #f5edfd;
 	--pure-white: #ffffff;
 	--black-100: #2c2a27;
 	--pure-black: #000000;
@@ -12,6 +13,16 @@
 	--neutral-30: #c0bfbf;
 	--neutral-20: #d5d4d4;
 	--neutral-10: #eaeaea;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 
 html {
@@ -117,4 +128,8 @@ li {
 	font-weight: 100;
 	/* font-size: 1rem; */
 	font-size: clamp(1rem, calc(10px + 0.6vw), 1.2rem);
+}
+
+strong {
+	font-weight: bold;
 }
