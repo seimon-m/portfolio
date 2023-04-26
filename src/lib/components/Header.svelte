@@ -6,8 +6,10 @@
 	<div class="wrapper">
 		<h5><strong>Portfolio</strong> Simon Müller</h5>
 		<Button>
-			<p>Available for freelance work</p>
-			<a class="link" target="_blank" href="mailto:hey@seimon.ch">hey@seimon.ch</a>
+			<a class="link" target="_blank" href="mailto:hey@seimon.ch">
+				<p>Available for freelance work</p>
+				<p>hey@seimon.ch</p>
+			</a>
 		</Button>
 	</div>
 </div>

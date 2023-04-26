@@ -8,6 +8,7 @@
 
 <style>
 	a {
+		color: var(--font);
 		width: fit-content;
 		text-decoration: underline;
 		text-underline-offset: 0.3em;

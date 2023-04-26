@@ -4,6 +4,7 @@
 
 <style>
 	button {
+		color: var(--font);
 		display: flex;
 		width: fit-content;
 		flex-direction: column;
