@@ -3,33 +3,22 @@
 </script>
 
 <div class="header">
-	<div class="wrapper">
-		<h5>Portfolio Simon Müller</h5>
-		<a class="button" href="/#work">
-			<p>works</p>
-			<img src={arrow} alt="an arrow" />
-		</a>
-	</div>
+	<h5><strong>Portfolio</strong> Simon Müller</h5>
+	<a class="button" href="/#work">
+		<p>works</p>
+		<img src={arrow} alt="an arrow" />
+	</a>
 </div>
 
 <style>
 	.header {
 		position: relative;
 		display: flex;
-		height: 12vh;
+		height: 10vh;
 		justify-content: center;
 		background-color: var(--primary-100);
 		top: 0;
-		position: sticky;
 		z-index: 2;
-	}
-	.wrapper {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: flex-start;
-		width: 95%;
-		height: 100%;
 	}
 
 	h5 {
