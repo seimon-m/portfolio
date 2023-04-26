@@ -88,13 +88,13 @@
 	} */
 
 	.start-title {
-		padding: 1rem;
+		padding: 0 1rem 4rem 1rem;
 	}
 
 	.start {
 		background-color: var(--primary-100);
 		position: relative;
-		height: 83vh;
+		height: 84vh;
 		display: flex;
 		align-items: center;
 		border-radius: 0 0 10px 10px;
@@ -102,7 +102,7 @@
 
 	@supports (height: 100dvh) {
 		.start {
-			height: 83dvh;
+			height: 84dvh;
 		}
 	}
 
@@ -150,10 +150,7 @@
 
 	.work-wrapper {
 		display: grid;
-		/* margin: 0 auto; */
 		gap: 1rem;
-		/* grid-template-columns: 1fr; */
-		/* scroll-snap-type: y proximity; */
 	}
 
 	@media (min-width: 60em) {

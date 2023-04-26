@@ -10,6 +10,6 @@
 <style>
 	main {
 		background-color: var(--white);
-		padding: 2vh 2vw;
+		padding: 1vh 1vw;
 	}
 </style>

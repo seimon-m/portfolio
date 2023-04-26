@@ -57,7 +57,7 @@ h1 {
 	font-weight: 500;
 	/* font-size: 11.25rem; */
 	/* font-size: clamp(50px, calc(30px + 9vw), 180px); */
-	font-size: clamp(10px, calc(10vw + 50px), 250px);
+	font-size: clamp(10px, calc(10vw + 42px), 250px);
 }
 
 h2 {
@@ -71,7 +71,7 @@ h2 {
 h3 {
 	font-family: 'Cormorant Garamond', serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 100;
 	line-height: 100%;
 	/* font-size: 6rem; */
 	font-size: clamp(10px, calc(20px + 2vw), 35px);
@@ -80,7 +80,7 @@ h3 {
 h4 {
 	font-family: 'Karla', sans-serif;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 500;
 	/* font-size: 2.5rem; */
 	font-size: clamp(10px, calc(30px + 1.8vw), 38px);
 }
@@ -96,11 +96,11 @@ h5 {
 a {
 	font-family: 'Karla', sans-serif;
 	font-style: normal;
-	font-weight: 100;
+	font-weight: 300;
 	line-height: 120%;
-	font-size: clamp(1rem, calc(10px + 0.6vw), 1.5rem);
+	font-size: clamp(1rem, calc(10px + 0.6vw), 1.2rem);
 	text-decoration: underline;
-	text-underline-offset: 0.4em;
+	text-underline-offset: 0.3em;
 	color: var(--font);
 	margin: 0.4em;
 	padding: 0.3em 0 0.3em 0;
@@ -109,7 +109,7 @@ a {
 }
 
 a:hover {
-	text-underline-offset: -1.05em;
+	text-underline-offset: -1em;
 }
 
 p {
