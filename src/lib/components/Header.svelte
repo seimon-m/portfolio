@@ -1,10 +1,14 @@
+<script>
+	import Button from './Button.svelte';
+</script>
+
 <div class="header">
 	<div class="wrapper">
 		<h5><strong>Portfolio</strong> Simon Müller</h5>
-		<div class="link-wrapper">
+		<Button>
 			<p>Available for freelance work</p>
 			<a class="link" target="_blank" href="mailto:hey@seimon.ch">hey@seimon.ch</a>
-		</div>
+		</Button>
 	</div>
 </div>
 
@@ -23,16 +27,6 @@
 		max-width: 2000px;
 		align-items: center;
 		justify-content: space-evenly;
-	}
-
-	.link-wrapper {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		background-color: var(--white);
-		border: 1px solid var(--font);
-		border-radius: 75px;
-		padding: 0.2rem 1.5rem;
 	}
 
 	a {

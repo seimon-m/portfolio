@@ -47,7 +47,7 @@
 
 	<div class="social card">
 		<h3>Get in touch</h3>
-		<Button class="button"><a href="mailto:hey@seimon.ch">Write an Email</a></Button>
+		<Button><a href="mailto:hey@seimon.ch">Write an Email</a></Button>
 		<Link href={cv} target="_blank" rel="noreferrer">Download CV</Link>
 
 		<Link href="https://github.com/seimon-m">Meet at GitHub</Link>
