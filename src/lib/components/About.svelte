@@ -1,9 +1,15 @@
 <script>
-	import simon from '$lib/assets/simon-klein.webp';
+	import simon_wide from '$lib/assets/simon_wide.jpg';
 	import cv from '$lib/assets/lebenslauf.pdf';
+	import Button from './Button.svelte';
+	import Link from './Link.svelte';
 </script>
 
 <div class="about">
+	<img
+		src={simon_wide}
+		alt="me in front of a concrete wall with two different light sources from the left in bluish light and from the right in yellowish light"
+	/>
 	<div class="intro card">
 		<h3>I'm Simon,</h3>
 		<p class="intro__text">
@@ -41,19 +47,21 @@
 
 	<div class="social card">
 		<h3>Get in touch</h3>
-		<a href={cv} target="_blank" rel="noreferrer">Download CV</a>
-		<a href="mailto:hey@seimon.ch" target="_blank" rel="noreferrer">Contact me</a>
-		<a href="https://github.com/seimon-m" target="_blank" rel="noreferrer">GitHub</a>
-		<a href="https://www.linkedin.com/in/seimon-m/" target="_blank" rel="noreferrer">LinkedIn</a>
+		<Button class="button"><a href="mailto:hey@seimon.ch">Write an Email</a></Button>
+		<Link href={cv} target="_blank" rel="noreferrer">Download CV</Link>
+
+		<Link href="https://github.com/seimon-m">Meet at GitHub</Link>
+		<Link href="https://www.linkedin.com/in/seimon-m/">Connect on LinkedIn</Link>
 	</div>
 </div>
 
 <style>
 	.about {
 		display: grid;
-		margin-left: 3em;
 		gap: 1.5rem;
 		grid-template-columns: 1fr;
+		background-color: var(--primary-100);
+		border-radius: 10px;
 	}
 
 	@media (min-width: 60em) {
@@ -62,12 +70,12 @@
 		}
 	}
 
-	.about > * {
-		/* background-color: aliceblue; */
+	img {
+		width: 100%;
+		border-radius: 10px;
 	}
 	.card {
-		/* border: 0.5px solid black; */
-		padding: 1em;
+		padding: 0 1.2rem 1.2rem 1.2rem;
 	}
 
 	.intro__text {
@@ -77,10 +85,11 @@
 		margin-bottom: 0;
 	}
 
-	.social > a {
-		display: inline-block;
-		margin-bottom: 0.5em;
-		margin-left: 0;
+	.social {
+		display: flex;
+		flex-direction: column;
+		width: fit-content;
+		margin-bottom: 1rem;
 	}
 
 	h3 {
