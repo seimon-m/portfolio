@@ -10,20 +10,21 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/adapter-vercel": "^2.0.0",
+		"@sveltejs/adapter-auto": "^2.1.0",
+		"@sveltejs/adapter-vercel": "^3.0.1",
 		"@sveltejs/kit": "^1.15.1",
 		"eslint": "^8.33.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
-		"svelte": "^3.55.1",
+		"svelte": "^3.59.1",
 		"vite": "^4.1.1"
 	},
 	"type": "module",
 	"dependencies": {
-		"@vercel/analytics": "^0.1.8",
-		"gsap": "^3.11.3"
+		"@vercel/analytics": "^1.0.1",
+		"gsap": "^3.11.3",
+		"svelte-kit": "^1.2.0"
 	}
 }
