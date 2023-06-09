@@ -3,14 +3,12 @@
 </script>
 
 <!-- <HeaderDetail /> -->
-<main>
+<div>
 	<slot />
-</main>
+</div>
 
 <style>
-	main {
-		/* margin-left: auto;
-		margin-right: auto;
-		width: 95%; */
+	div {
+		margin: 0 0.5rem;
 	}
 </style>

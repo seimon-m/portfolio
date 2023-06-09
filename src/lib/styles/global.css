@@ -2,7 +2,7 @@
 
 :root {
 	--primary-100: #cfb5ea;
-	--secondary-100: #fdcd9f;
+	--secondary-100: #e8ddc1;
 	--tertiary-100: #c87992;
 	--font: #000000;
 	--white: #f5edfd;
@@ -52,6 +52,8 @@ body {
 }
 
 h1 {
+	color: var(--white);
+	mix-blend-mode: difference;
 	font-family: 'Cormorant Garamond', serif;
 	font-style: normal;
 	font-weight: 500;
@@ -61,6 +63,8 @@ h1 {
 }
 
 h2 {
+	color: var(--primary-100);
+	mix-blend-mode: difference;
 	font-family: 'Karla', sans-serif;
 	font-style: normal;
 	font-weight: 500;
@@ -69,6 +73,8 @@ h2 {
 }
 
 h3 {
+	color: var(--primary-100);
+	mix-blend-mode: difference;
 	font-family: 'Cormorant Garamond', serif;
 	font-style: normal;
 	font-weight: 100;
@@ -78,6 +84,8 @@ h3 {
 }
 
 h4 {
+	color: var(--primary-100);
+	mix-blend-mode: difference;
 	font-family: 'Karla', sans-serif;
 	font-style: normal;
 	font-weight: 500;
@@ -86,6 +94,8 @@ h4 {
 }
 
 h5 {
+	color: var(--primary-100);
+	mix-blend-mode: difference;
 	font-family: 'Karla', sans-serif;
 	font-style: normal;
 	font-weight: 300;
@@ -100,10 +110,11 @@ a {
 	line-height: 120%;
 	font-size: clamp(1rem, calc(10px + 0.6vw), 1.2rem);
 	text-decoration: none;
-	color: var(--font);
 }
 
 p {
+	color: var(--primary-100);
+	mix-blend-mode: difference;
 	font-family: 'Karla', sans-serif;
 	font-style: normal;
 	font-weight: 300;

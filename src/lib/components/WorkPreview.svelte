@@ -5,8 +5,8 @@
 <a class="container" href="/{project.url}">
 	<img src={project?.image} alt="random" />
 	<div class="text">
-		<h4 class="heading">{project.title}</h4>
-		<h5 class="tags">{project.tags}</h5>
+		<h3 class="heading">{project.title}</h3>
+		<p class="tags">{project.tags}</p>
 	</div>
 </a>
 
@@ -25,6 +25,13 @@
 		border-radius: 10px;
 	}
 
+	h3 {
+		font-size: 50px;
+		font-weight: 500;
+		padding-bottom: 0.5rem;
+		line-height: 90%;
+	}
+
 	.text {
 		display: flex;
 		flex-direction: column;
@@ -33,14 +40,13 @@
 	}
 
 	.heading {
-		line-height: 1.9rem;
 		margin-bottom: 0.8rem;
 	}
 
 	.tags {
 		font-size: 1rem;
-		padding: 0.1rem 0.6rem;
-		border: 1px solid black;
+		padding: 0.2rem 0.5rem;
+		border: 1px solid var(--secondary-100);
 		border-radius: 50px;
 		width: fit-content;
 	}
