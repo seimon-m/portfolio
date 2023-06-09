@@ -4,7 +4,7 @@
 	import { onMount } from 'svelte';
 	import '$lib/styles/global.css';
 	import WorkPreview from '$lib/components/WorkPreview.svelte';
-	import work from '$lib/data/work.json';
+	import projects from '$lib/data/work.json';
 	import About from '$lib/components/About.svelte';
 
 	onMount(() => {
@@ -37,7 +37,7 @@
 			<h2 class="section-title">work</h2>
 
 			<div class="work-wrapper">
-				{#each work as project}
+				{#each projects as project}
 					<WorkPreview {project} />
 				{/each}
 			</div>
