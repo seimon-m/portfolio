@@ -14,8 +14,10 @@
 	.container {
 		height: fit-content;
 		position: relative;
-		background-color: var(--secondary-100);
 		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: space-between;
 	}
 
 	img {
@@ -23,12 +25,16 @@
 		aspect-ratio: 3 / 1.95;
 		object-fit: cover;
 		border-radius: 10px;
+		display: inline-block;
+		width: 90%;
+		z-index: 1;
 	}
 
 	h3 {
-		font-size: 50px;
+		font-size: 45px;
 		font-weight: 500;
-		padding-bottom: 0.5rem;
+		padding-bottom: 1rem;
+		padding-left: 1rem;
 		line-height: 90%;
 	}
 
@@ -36,14 +42,20 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		margin: 0.7rem 1rem;
-	}
-
-	.heading {
-		margin-bottom: 0.8rem;
+		margin: -8.2rem 0 0 0;
+		padding: 9rem 1rem 0rem 0rem;
+		width: 90%;
+		background-color: var(--secondary-100);
+		margin-left: auto;
+		border-radius: 10px;
 	}
 
 	.tags {
+		position: absolute;
+		right: 0.3rem;
+		top: 5rem;
+		transform-origin: bottom right;
+		transform: rotate(-90deg);
 		font-size: 1rem;
 		padding: 0.2rem 0.5rem;
 		border: 1px solid var(--secondary-100);
