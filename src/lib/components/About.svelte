@@ -74,6 +74,10 @@
 		width: 100%;
 		border-radius: 10px;
 	}
+
+	a {
+		color: var(--font);
+	}
 	.card {
 		padding: 0 1.2rem 1.2rem 1.2rem;
 	}

@@ -48,6 +48,13 @@
 		background-color: var(--secondary-100);
 		margin-left: auto;
 		border-radius: 10px;
+		box-shadow: 0px 3px 6px rgba(24, 24, 27, 0.02), 0px 2px 7px rgba(24, 24, 27, 0.04),
+			0 0 0 1px rgba(62, 45, 81, 0.1);
+	}
+
+	.text:hover {
+		box-shadow: 0px 3px 6px rgba(24, 24, 27, 0.05), 0px 8px 15px rgba(24, 24, 27, 0.1),
+			0 0 0 1px rgba(62, 45, 81, 0.15);
 	}
 
 	.tags {

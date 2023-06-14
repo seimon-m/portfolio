@@ -43,7 +43,7 @@
 			</div>
 		</section>
 		<section class="section about" id="about">
-			<h2 class="section-title">about</h2>
+			<h2 class="section-title title-about">about</h2>
 			<About />
 		</section>
 	</div>
@@ -61,31 +61,26 @@
 		position: relative;
 	}
 
-	/* .section {
-		position: relative;
-		margin: 0.5em;
-		margin-bottom: 6rem;
-	}
-
 	.section-title {
 		position: sticky;
-		transform: rotate(-90deg) translateX(-190%) translateY(-10%);
-		z-index: 1;
-		transform-origin: top left;
-		left: 0;
-		top: 0px;
+		top: 150px;
+		left: 20px;
+		z-index: 10;
 		width: fit-content;
-		margin-right: 200px;
-		border-radius: 0 0 13px 13px;
-		padding: 0.05em 0.2em;
-		box-sizing: border-box;
-		overflow: hidden;
-		background: rgba(253, 205, 159, 0.65);
+		transform-origin: center left;
+		transform: rotate(-90deg) translateX(-90%);
+
 		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 		backdrop-filter: blur(3.4px);
 		-webkit-backdrop-filter: blur(3.4px);
 		border: 1px solid rgba(253, 205, 159, 0.35);
-	} */
+		border-radius: 10px;
+		padding: 0px 10px;
+	}
+
+	.title-about {
+		top: 37%;
+	}
 
 	.start-title {
 		padding: 0 1rem 4rem 1rem;
