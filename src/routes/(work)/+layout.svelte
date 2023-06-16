@@ -9,6 +9,6 @@
 
 <style>
 	div {
-		margin: 0 0.5rem;
+		/* margin: 0 0.5rem; */
 	}
 </style>

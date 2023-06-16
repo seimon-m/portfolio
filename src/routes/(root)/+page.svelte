@@ -25,6 +25,11 @@
 <div class="container">
 	<div class="content">
 		<section class="start">
+			<a class="button" target="_blank" href="mailto:hey@seimon.ch">
+				<p>Available for freelance work</p>
+				<p>hey@seimon.ch</p>
+			</a>
+
 			<h1 class="start-title">Media artist, Coder and Designer</h1>
 			<div class="scroll-indicator">
 				<p class="scroll-text">
@@ -43,7 +48,7 @@
 			</div>
 		</section>
 		<section class="section about" id="about">
-			<h2 class="section-title title-about">about</h2>
+			<h2 class="section-title">about</h2>
 			<About />
 		</section>
 	</div>
@@ -61,9 +66,35 @@
 		position: relative;
 	}
 
+	.start {
+		background-color: rgba(207, 181, 234, 0.8);
+		position: relative;
+		margin-top: 15vh;
+		height: 85vh;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+		border-radius: 10px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(3.4px);
+		-webkit-backdrop-filter: blur(3.4px);
+	}
+
+	@supports (height: 100dvh) {
+		.start {
+			height: 84dvh;
+		}
+	}
+
+	.start-title {
+		padding: 0 1rem 4rem 1rem;
+		transform: translateY(-2.5rem);
+	}
+
 	.section-title {
 		position: sticky;
-		top: 150px;
+		top: 0;
 		left: 20px;
 		z-index: 10;
 		width: fit-content;
@@ -76,29 +107,7 @@
 		border: 1px solid rgba(253, 205, 159, 0.35);
 		border-radius: 10px;
 		padding: 0px 10px;
-	}
-
-	.title-about {
-		top: 37%;
-	}
-
-	.start-title {
-		padding: 0 1rem 4rem 1rem;
-	}
-
-	.start {
-		background-color: var(--primary-100);
-		position: relative;
-		height: 84vh;
-		display: flex;
-		align-items: center;
-		border-radius: 0 0 10px 10px;
-	}
-
-	@supports (height: 100dvh) {
-		.start {
-			height: 84dvh;
-		}
+		margin-bottom: 100px;
 	}
 
 	.scroll-indicator {
@@ -106,7 +115,7 @@
 		bottom: 0;
 		width: 100%;
 		left: 0;
-		/* z-index: 10; */
+		z-index: 10;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -121,6 +130,7 @@
 	}
 
 	.scroll-text {
+		color: var(--font);
 		margin-bottom: 5px;
 		font-weight: 300;
 	}

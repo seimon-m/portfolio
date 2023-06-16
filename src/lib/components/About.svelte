@@ -1,7 +1,6 @@
 <script>
 	import simon_wide from '$lib/assets/simon_wide.jpg';
 	import cv from '$lib/assets/lebenslauf.pdf';
-	import Button from './Button.svelte';
 	import Link from './Link.svelte';
 </script>
 
@@ -47,7 +46,7 @@
 
 	<div class="social card">
 		<h3>Get in touch</h3>
-		<Button><a href="mailto:hey@seimon.ch">Write an Email</a></Button>
+		<a class="button" href="mailto:hey@seimon.ch">Write an Email</a>
 		<Link href={cv} target="_blank" rel="noreferrer">Download CV</Link>
 
 		<Link href="https://github.com/seimon-m">Meet at GitHub</Link>

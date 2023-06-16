@@ -1,40 +1,44 @@
 <script>
-	import Button from './Button.svelte';
+	import gsap from 'gsap/dist/gsap';
+	import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger);
+
+		gsap.to('.header', {
+			scrollTrigger: {
+				trigger: '.content',
+				start: 300,
+				toggleActions: 'restart none none reverse'
+				// markers: true
+			},
+			opacity: 0
+		});
+	});
 </script>
 
 <div class="header">
-	<div class="wrapper">
-		<h5><strong>Portfolio</strong> Simon Müller</h5>
-		<Button>
-			<a class="link" target="_blank" href="mailto:hey@seimon.ch">
-				<p>Available for freelance work</p>
-				<p>hey@seimon.ch</p>
-			</a>
-		</Button>
-	</div>
+	<h1>Portfolio</h1>
+	<h5>Simon Müller</h5>
 </div>
 
 <style>
 	.header {
+		position: fixed;
 		display: flex;
 		justify-content: center;
-		background-color: var(--primary-100);
-		height: 15vh;
-		border-radius: 10px 10px 0 0;
-	}
-	.wrapper {
-		display: flex;
 		flex-direction: column;
-		margin: 0.5rem;
-		max-width: 2000px;
-		align-items: center;
-		justify-content: space-evenly;
+		background-color: var(--white);
+		top: 0;
 	}
 
-	a {
-		border: 0;
-		padding: 0;
-		margin: 0;
+	h1 {
+		font-size: 25vw;
+		color: var(--primary-100);
+		mix-blend-mode: difference;
+		line-height: 90%;
+		/* font-weight: 100; */
 	}
 
 	/* @media screen and (max-width: 550px) {
