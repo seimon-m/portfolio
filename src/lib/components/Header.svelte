@@ -8,10 +8,11 @@
 
 		gsap.to('.header', {
 			scrollTrigger: {
-				trigger: '.content',
-				start: 300,
-				toggleActions: 'restart none none reverse'
-				// markers: true
+				trigger: '.start-title',
+				start: 'center center',
+				end: '+=300',
+				toggleActions: 'restart none none reverse',
+				scrub: true
 			},
 			opacity: 0
 		});

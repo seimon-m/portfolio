@@ -60,7 +60,7 @@
 	.tags {
 		position: absolute;
 		right: 0.3rem;
-		top: 5rem;
+		bottom: 12rem;
 		transform-origin: bottom right;
 		transform: rotate(-90deg);
 		font-size: 1rem;
@@ -75,5 +75,11 @@
 		margin: 0;
 		padding: 0;
 		text-decoration: none;
+	}
+
+	@media only screen and (min-width: 768px) {
+		.tags {
+			background-color: aqua;
+		}
 	}
 </style>

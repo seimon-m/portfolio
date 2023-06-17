@@ -48,7 +48,7 @@
 			</div>
 		</section>
 		<section class="section about" id="about">
-			<h2 class="section-title">about</h2>
+			<h2 class="section-title about-title">about</h2>
 			<About />
 		</section>
 	</div>
@@ -107,7 +107,11 @@
 		border: 1px solid rgba(253, 205, 159, 0.35);
 		border-radius: 10px;
 		padding: 0px 10px;
-		margin-bottom: 100px;
+		/* margin-right: 500px; */
+	}
+
+	.about-title {
+		margin-top: 100px;
 	}
 
 	.scroll-indicator {
