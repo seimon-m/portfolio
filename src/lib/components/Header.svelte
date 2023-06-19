@@ -39,7 +39,19 @@
 		color: var(--primary-100);
 		mix-blend-mode: difference;
 		line-height: 90%;
-		/* font-weight: 100; */
+		font-size: clamp(10px, calc(10vw + 42px), 190pt);
+	}
+
+	@media only screen and (min-width: 768px) {
+		.header {
+			flex-direction: row;
+			justify-content: space-between;
+			background-color: var(--white);
+			top: 0;
+			left: 1vw;
+			right: 1vw;
+			margin-top: 0.5rem;
+		}
 	}
 
 	/* @media screen and (max-width: 550px) {

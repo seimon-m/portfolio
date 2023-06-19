@@ -2,7 +2,7 @@
 	export let project;
 </script>
 
-<a class="container" href="/{project.url}">
+<a class={($$restProps.class || '') + ' container'} href="/{project.url}">
 	<img src={project?.image} alt="random" />
 	<div class="text">
 		<h3 class="heading">{project.title}</h3>
@@ -17,17 +17,17 @@
 		border-radius: 10px;
 		display: flex;
 		flex-direction: column;
-		align-items: space-between;
+		/* align-items: space-between; */
 	}
 
 	img {
-		width: 100%;
 		aspect-ratio: 3 / 1.95;
 		object-fit: cover;
 		border-radius: 10px;
 		display: inline-block;
 		width: 90%;
 		z-index: 1;
+		max-height: 90vh;
 	}
 
 	h3 {
@@ -36,6 +36,9 @@
 		padding-bottom: 1rem;
 		padding-left: 1rem;
 		line-height: 90%;
+		hyphens: auto;
+		word-break: break-word;
+		word-wrap: break-word;
 	}
 
 	.text {
@@ -52,14 +55,20 @@
 			0 0 0 1px rgba(62, 45, 81, 0.1);
 	}
 
+	img:hover + .text,
 	.text:hover {
 		box-shadow: 0px 3px 6px rgba(24, 24, 27, 0.05), 0px 8px 15px rgba(24, 24, 27, 0.1),
 			0 0 0 1px rgba(62, 45, 81, 0.15);
 	}
 
+	img:has(~ .text:hover),
+	img:hover {
+		box-shadow: 0px 3px 6px rgba(24, 24, 27, 0.05), 0px 8px 15px rgba(24, 24, 27, 0.1),
+			0 0 0 1px rgba(62, 45, 81, 0);
+	}
 	.tags {
 		position: absolute;
-		right: 0.3rem;
+		right: 2%;
 		bottom: 12rem;
 		transform-origin: bottom right;
 		transform: rotate(-90deg);
@@ -78,8 +87,42 @@
 	}
 
 	@media only screen and (min-width: 768px) {
+		.container {
+			grid-column: span 1;
+			/* height: 20fr; */
+		}
+
+		.first {
+			grid-column: 1 / -1;
+		}
+
+		.first > img {
+			width: 100%;
+		}
+
+		.first > .text {
+			flex-direction: row;
+			width: 95%;
+			align-items: center;
+		}
+
+		.first > .text > .tags {
+			position: unset;
+			transform-origin: bottom right;
+			margin-bottom: 0.7rem;
+			padding: 0.2rem 0.5rem;
+			transform: rotate(0deg);
+			font-size: 1rem;
+			border: 1px solid var(--secondary-100);
+			border-radius: 50px;
+		}
+
+		img {
+			width: 92%;
+		}
+
 		.tags {
-			background-color: aqua;
+			right: 1%;
 		}
 	}
 </style>

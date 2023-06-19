@@ -42,8 +42,12 @@
 			<h2 class="section-title">work</h2>
 
 			<div class="work-wrapper">
-				{#each projects as project}
-					<WorkPreview {project} />
+				{#each projects as project, index}
+					{#if index === 0}
+						<WorkPreview {project} class="first" />
+					{:else}
+						<WorkPreview {project} />
+					{/if}
 				{/each}
 			</div>
 		</section>
@@ -70,7 +74,7 @@
 		background-color: rgba(207, 181, 234, 0.8);
 		position: relative;
 		margin-top: 15vh;
-		height: 85vh;
+		height: 84vh;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
@@ -81,9 +85,9 @@
 		-webkit-backdrop-filter: blur(3.4px);
 	}
 
-	@supports (height: 100dvh) {
+	@supports (height: 100svh) {
 		.start {
-			height: 84dvh;
+			height: 84svh;
 		}
 	}
 
@@ -159,9 +163,21 @@
 
 	.work-wrapper {
 		display: grid;
-		gap: 1rem;
+		gap: 2rem;
 	}
 
+	@media only screen and (min-width: 768px) {
+		.work-wrapper {
+			/* grid-template-columns: 1fr 1fr; */
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.start-title {
+			max-width: 1400px;
+			align-self: flex-start;
+			margin-left: 4%;
+		}
+	}
 	@media (min-width: 60em) {
 		/* .content {
 			width: 85%;
