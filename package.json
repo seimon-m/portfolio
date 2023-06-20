@@ -25,6 +25,7 @@
 	"dependencies": {
 		"@vercel/analytics": "^1.0.1",
 		"gsap": "^3.11.3",
-		"svelte-kit": "^1.2.0"
+		"svelte-kit": "^1.2.0",
+		"vanilla-tilt": "^1.8.0"
 	}
 }

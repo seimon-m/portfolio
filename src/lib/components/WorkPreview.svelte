@@ -1,8 +1,9 @@
 <script>
 	export let project;
+	import { tilt } from '$lib/scripts/effects';
 </script>
 
-<a class={($$restProps.class || '') + ' container'} href="/{project.url}">
+<a class={($$restProps.class || '') + ' work-container'} href="/{project.url}" use:tilt>
 	<img src={project?.image} alt="random" />
 	<div class="text">
 		<h3 class="heading">{project.title}</h3>
@@ -11,13 +12,12 @@
 </a>
 
 <style>
-	.container {
+	.work-container {
 		height: fit-content;
 		position: relative;
 		border-radius: 10px;
 		display: flex;
 		flex-direction: column;
-		/* align-items: space-between; */
 	}
 
 	img {
