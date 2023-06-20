@@ -107,14 +107,23 @@
 		transform: rotate(-90deg) translateX(-110%) translateY(-20%);
 
 		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
-		backdrop-filter: blur(5px);
 		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
 		mix-blend-mode: difference;
 
-		border: 1px solid rgba(253, 205, 159, 0.35);
+		border: 1px solid rgba(71, 64, 59, 0.4);
 		border-radius: 10px;
 		padding: 0px 10px;
+	}
+
+	/* Fix for Safari blend mode bug */
+	@supports not (backdrop-filter: blur(5px)) {
+		.section-title {
+			color: #b496d3;
+			mix-blend-mode: normal;
+			-webkit-backdrop-filter: blur(10px);
+			border: 1px solid rgba(71, 64, 59, 0.2);
+		}
 	}
 
 	.about-title {
