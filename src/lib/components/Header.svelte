@@ -33,7 +33,7 @@
 		background-color: var(--white);
 		top: 0;
 		margin: 0 auto;
-		max-width: 2000px;
+		max-width: 2500px;
 	}
 
 	h1 {

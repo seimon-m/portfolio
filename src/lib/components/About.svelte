@@ -2,6 +2,7 @@
 	import simon_wide from '$lib/assets/simon_wide.jpg';
 	import cv from '$lib/assets/lebenslauf.pdf';
 	import Link from './Link.svelte';
+	import { tiltButton } from '$lib/scripts/effects';
 </script>
 
 <div class="about">
@@ -46,7 +47,7 @@
 
 	<div class="social card">
 		<h3>Get in touch</h3>
-		<a class="button" href="mailto:hey@seimon.ch">Write an Email</a>
+		<a class="button" href="mailto:hey@seimon.ch" use:tiltButton>Write an Email</a>
 		<Link href={cv} target="_blank" rel="noreferrer">Download CV</Link>
 
 		<Link href="https://github.com/seimon-m">Meet at GitHub</Link>

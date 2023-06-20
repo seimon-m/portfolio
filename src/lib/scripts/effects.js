@@ -5,10 +5,11 @@ export function tilt(node) {
 		max: 3,
 		speed: 500
 	});
+}
 
-	// return {
-	// 	destroy() {
-	// 		VanillaTilt.destroy();
-	// 	}
-	// };
+export function tiltButton(node) {
+	VanillaTilt.init(node, {
+		max: 12,
+		speed: 500
+	});
 }

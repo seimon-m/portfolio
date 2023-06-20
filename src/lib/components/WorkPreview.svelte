@@ -141,4 +141,9 @@
 			width: 95%;
 		}
 	}
+	@media only screen and (min-width: 2200px) {
+		img {
+			width: 96%;
+		}
+	}
 </style>

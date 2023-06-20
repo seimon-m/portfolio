@@ -6,6 +6,7 @@
 	import WorkPreview from '$lib/components/WorkPreview.svelte';
 	import projects from '$lib/data/work.json';
 	import About from '$lib/components/About.svelte';
+	import { tiltButton } from '$lib/scripts/effects';
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -25,7 +26,7 @@
 <div class="container">
 	<div class="content">
 		<section class="start">
-			<a class="button" target="_blank" href="mailto:hey@seimon.ch">
+			<a class="button" target="_blank" href="mailto:hey@seimon.ch" use:tiltButton>
 				<p>Available for freelance work</p>
 				<p>hey@seimon.ch</p>
 			</a>
@@ -66,7 +67,7 @@
 	}
 	.content {
 		position: relative;
-		max-width: 2000px;
+		max-width: 2500px;
 		position: relative;
 	}
 
