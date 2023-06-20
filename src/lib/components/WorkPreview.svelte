@@ -118,11 +118,27 @@
 		}
 
 		img {
-			width: 92%;
+			width: 90%;
 		}
 
 		.tags {
 			right: 1%;
+		}
+	}
+
+	@media only screen and (min-width: 992px) {
+		img {
+			width: 93%;
+		}
+	}
+	@media only screen and (min-width: 1400px) {
+		img {
+			width: 94%;
+		}
+	}
+	@media only screen and (min-width: 2000px) {
+		img {
+			width: 95%;
 		}
 	}
 </style>

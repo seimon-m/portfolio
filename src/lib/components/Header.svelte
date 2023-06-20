@@ -32,6 +32,8 @@
 		flex-direction: column;
 		background-color: var(--white);
 		top: 0;
+		margin: 0 auto;
+		max-width: 2000px;
 	}
 
 	h1 {
@@ -53,27 +55,4 @@
 			margin-top: 0.5rem;
 		}
 	}
-
-	/* @media screen and (max-width: 550px) {
-		.wrapper {
-			flex-direction: column;
-			align-items: flex-start;
-		}
-
-		h5 {
-			padding-top: 10px;
-		}
-	}
-
-	@media (min-width: 60em) {
-		.wrapper {
-			width: 85%;
-		}
-	}
-
-	@media (min-width: 92em) {
-		.wrapper {
-			width: 90%;
-		}
-	} */
 </style>

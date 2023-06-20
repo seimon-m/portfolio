@@ -63,7 +63,7 @@ h1 {
 
 h2 {
 	color: var(--primary-100);
-	mix-blend-mode: difference;
+	/* mix-blend-mode: difference; */
 	font-family: 'Karla', sans-serif;
 	font-style: normal;
 	font-weight: 400;

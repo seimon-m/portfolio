@@ -85,8 +85,8 @@
 	.social {
 		display: flex;
 		flex-direction: column;
-		width: fit-content;
 		margin-bottom: 1rem;
+		gap: 0.8rem;
 	}
 
 	h3 {
@@ -127,19 +127,19 @@
 		}
 	}
 
-	@media (min-width: 900px) {
+	@media only screen and (min-width: 900px) {
 		.passion {
 			margin-top: -60%;
 		}
 	}
 
-	@media (min-width: 1000px) {
+	@media only screen and (min-width: 1000px) {
 		.passion {
 			margin-top: -40%;
 		}
 	}
 
-	@media (min-width: 1150px) {
+	@media only screen and (min-width: 1150px) {
 		.card {
 			padding: 3em;
 		}
@@ -147,12 +147,12 @@
 			margin-top: -30%;
 		}
 	}
-	@media (min-width: 1385px) {
+	@media only screen and (min-width: 1385px) {
 		.passion {
 			margin-top: -20%;
 		}
 	}
-	@media (min-width: 1500px) {
+	@media only screen and (min-width: 1500px) {
 		.passion {
 			margin-top: -10%;
 		}
