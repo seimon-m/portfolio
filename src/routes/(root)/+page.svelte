@@ -95,6 +95,7 @@
 	.start-title {
 		padding: 0 1rem 4rem 1rem;
 		transform: translateY(-2.5rem);
+		max-width: 1800px;
 	}
 
 	.section-title {
@@ -186,8 +187,6 @@
 		}
 
 		.start-title {
-			max-width: 1400px;
-			align-self: flex-start;
 			margin-left: 4%;
 		}
 		.section-title {
@@ -206,6 +205,10 @@
 		}
 	}
 	@media only screen and (min-width: 1400px) {
+		.start-title {
+			padding: 0 1rem 10rem 5rem;
+			transform: translateY(-2.5rem);
+		}
 	}
 
 	@media only screen and (min-width: 2000px) {

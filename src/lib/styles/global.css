@@ -30,15 +30,15 @@ html {
 	font-size: 16px;
 	color: var(--font);
 	/* Scrollbar styling for Firefox */
-	scrollbar-color: var(--tertiary-100) var(--primary-100);
+	scrollbar-color: var(--tertiary-100) var(--white);
 	scrollbar-width: thin;
 }
 html::-webkit-scrollbar {
-	width: 10px;
+	width: 8px;
 }
 
 html::-webkit-scrollbar-track {
-	background: var(--primary-100);
+	background: var(--white);
 }
 
 html::-webkit-scrollbar-thumb {
@@ -58,7 +58,7 @@ h1 {
 	font-family: 'Cormorant Garamond', serif;
 	font-style: normal;
 	font-weight: 500;
-	font-size: clamp(10px, calc(10vw + 42px), 150px);
+	font-size: clamp(10px, calc(10vw + 42px), 200px);
 }
 
 h2 {
