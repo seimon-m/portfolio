@@ -1,5 +1,6 @@
 <script>
 	import HeaderDetail from '$lib/components/HeaderDetail.svelte';
+	import '$lib/styles/project.css';
 </script>
 
 <!-- <HeaderDetail /> -->

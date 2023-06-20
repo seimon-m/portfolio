@@ -29,6 +29,11 @@ section {
 	background-color: #d3cadb;
 }
 
+.arrow {
+	display: block;
+	margin: auto;
+}
+
 .back-button > img {
 	margin: 0;
 }
