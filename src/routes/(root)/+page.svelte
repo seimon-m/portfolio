@@ -119,10 +119,11 @@
 	/* Fix for Safari blend mode bug */
 	@supports not (backdrop-filter: blur(5px)) {
 		.section-title {
-			color: #b496d3;
-			mix-blend-mode: normal;
-			-webkit-backdrop-filter: blur(10px);
-			border: 1px solid rgba(71, 64, 59, 0.2);
+			color: var(--primary-100);
+			mix-blend-mode: difference;
+			-webkit-backdrop-filter: blur(5px);
+			border: 1px solid rgba(98, 94, 90, 0.9);
+			background-color: rgba(0, 0, 0, 0.8);
 		}
 	}
 
