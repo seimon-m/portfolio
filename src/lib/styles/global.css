@@ -58,7 +58,7 @@ h1 {
 	font-family: 'Cormorant Garamond', serif;
 	font-style: normal;
 	font-weight: 500;
-	font-size: clamp(10px, calc(10vw + 42px), 200px);
+	font-size: clamp(10px, calc(9vw + 32px), 200px);
 }
 
 h2 {

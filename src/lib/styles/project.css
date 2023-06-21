@@ -64,6 +64,10 @@ img {
 	border-radius: 10px;
 }
 
+a {
+	color: #8b7129;
+}
+
 .heroimage {
 	height: 400px;
 	object-fit: cover;
@@ -153,10 +157,7 @@ iframe {
 		margin: 3rem 0;
 	}
 }
-@media only screen and (min-width: 1400px) {
-	.right {
-		flex: 2;
-	}
+@media only screen and (min-width: 1600px) {
 }
 
 @media only screen and (min-width: 2000px) {
@@ -166,5 +167,8 @@ iframe {
 	.back-button {
 		left: 6rem;
 		top: 3rem;
+	}
+	.right {
+		flex: 2;
 	}
 }

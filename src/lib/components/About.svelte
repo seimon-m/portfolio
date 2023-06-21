@@ -13,22 +13,24 @@
 	<div class="intro card">
 		<h3>I'm Simon,</h3>
 		<p class="intro__text">
-			a multi-talented designer, web developer, and media artist based in Bern, Switzerland. My work
-			transcends the boundaries of the screen, exploring the space beyond and blurring the lines
-			between the physical and the digital. My goal is always to craft immersive experiences that
-			captivate people.
+			a designer, web developer, and media artist based in Bern, Switzerland. My work transcends the
+			boundaries of the screen, exploring the space beyond and blurring the lines between the
+			physical and the digital. My goal is always to craft immersive experiences that captivate
+			people.
 		</p>
 		<p />
 		<p class="intro__text">
-			Drawing from my background as a electronic technician and my Bachelors Degree in Digital
-			Ideation, I utilize various media to realize my artistic vision, with a particular passion for
-			crafting for the web and its expansive accessibility.
+			I graduated from the Lucerne University of Applied Sciences and Arts with a Bachelor's degree
+			in Digital Ideation. Although a newcomer to the field of media art, I already completed
+			several projects in this realm, in addition to my effort in web development. My works combine
+			physical and electronic elements, creating an immersive experience that explores the
+			intersection between technology and humanity. In my works, the audience is encouraged to
+			contemplate the ways in which technology shapes our perceptions of the world.
 		</p>
 		<p />
 		<p class="intro__text">
-			My process is rooted in collaboration, allowing me to craft bespoke solutions that resonate
-			with each individual client. Explore my portfolio to get a sense of my work, and feel free to
-			reach out if you're interested in collaborating. Let's create something beautiful together.
+			Explore my portfolio to get a sense of my work, and feel free to reach out if you're
+			interested in collaborating or if you have some questions.
 		</p>
 	</div>
 	<div class="passion card">
