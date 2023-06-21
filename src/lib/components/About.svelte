@@ -95,6 +95,10 @@
 		margin-bottom: 0.5em;
 	}
 
+	ul:last-of-type {
+		border-bottom: 0.5px solid black;
+	}
+
 	li {
 		padding: 1em 0 1em 0;
 		border-top: 0.5px solid black;
