@@ -1,23 +1,23 @@
 {
-    "name": "portfolio",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-        "dev": "vite dev",
-        "build": "vite build"
-    },
-    "devDependencies": {
-        "@sveltejs/adapter-auto": "^2.1.0",
-        "@sveltejs/adapter-vercel": "^3.0.1",
-        "@sveltejs/kit": "^1.15.1",
-        "svelte": "^3.59.1",
-        "vite": "^4.1.1"
-    },
-    "type": "module",
-    "dependencies": {
-        "@vercel/analytics": "^1.0.1",
-        "gsap": "^3.11.3",
-        "svelte-kit": "^1.2.0",
-        "vanilla-tilt": "^1.8.0"
-    }
+	"name": "portfolio",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.1.0",
+		"@sveltejs/adapter-vercel": "^3.0.1",
+		"@sveltejs/kit": "^1.15.1",
+		"svelte": "^3.59.1",
+		"vite": "^4.1.1"
+	},
+	"type": "module",
+	"dependencies": {
+		"@vercel/analytics": "^1.0.1",
+		"gsap": "^3.11.3",
+		"svelte-kit": "^1.2.0",
+		"vanilla-tilt": "^1.8.0"
+	}
 }
