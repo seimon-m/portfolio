@@ -1,38 +1,24 @@
-# create-svelte
+# Portfolio Simon Müller
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is the source code for my brand new personal portfolio website.
+You can visit it [here](https://seimon.ch).
 
-## Creating a project
+Used Technologies:
+- [Sveltekit](https://kit.svelte.dev)
+- [GSAP](https://greensock.com/gsap/)
+- [Vercel](https://vercel.com)
+- [vanilla-tilt.js](https://github.com/micku7zu/vanilla-tilt.js)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Getting started
+Clone this repository. You will need `Node.js` and `Git` installed globally on your system.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+### Installation and setup
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+1. Navigate into the project
+2. Installation: `npm install`
+3. Start the local dev server: `npm start`
 
-## Developing
+Open [http://localhost:5173](http://localhost:5173/) to see it live in the browser. Hot-reloading is supported, so any changes you make should be visible immediately.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Contributon
+I won't accept any pull-requests. But you can fork the repo and do whatever you want with it.
