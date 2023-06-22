@@ -1,0 +1,169 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Karla:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;600;700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Pathway+Extreme:wght@100;400;600;800&family=Raleway:wght@100;200;300;600;700&display=swap");
+
+:root {
+    --primary-100: #cfb5ea;
+    --secondary-100: #e8ddc1;
+    --tertiary-100: #c87992;
+    --green: #304a15;
+    --font: #000000;
+    --white: #f5edfd;
+    --pure-white: #ffffff;
+    --black-100: #2c2a27;
+    --pure-black: #000000;
+    --neutral-70: #6b6a68;
+    --neutral-30: #c0bfbf;
+    --neutral-20: #d5d4d4;
+    --neutral-10: #eaeaea;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 16px;
+    color: var(--font);
+    /* Scrollbar styling for Firefox */
+    scrollbar-color: var(--tertiary-100) var(--white);
+    scrollbar-width: thin;
+}
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary-100);
+    border-radius: 20px;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    margin: 0;
+    background-color: var(--white);
+}
+
+h1 {
+    color: var(--primary-100);
+    mix-blend-mode: difference;
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(10px, calc(9vw + 32px), 200px);
+}
+
+h2 {
+    color: var(--primary-100);
+    /* mix-blend-mode: difference; */
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(10px, calc(50px + 1.1vw), 80px);
+}
+
+h3 {
+    color: var(--primary-100);
+    mix-blend-mode: difference;
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 100%;
+    font-size: clamp(10px, calc(20px + 2vw), 35px);
+}
+
+h4 {
+    color: var(--primary-100);
+    mix-blend-mode: difference;
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(10px, calc(30px + 1.8vw), 38px);
+}
+
+h5 {
+    color: var(--primary-100);
+    mix-blend-mode: difference;
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    /* font-size: 1.4rem; */
+    font-size: clamp(10px, calc(15px + 2.5vw), 35px);
+}
+
+a {
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    font-size: clamp(1rem, calc(10px + 0.6vw), 1.2rem);
+    text-decoration: none;
+}
+
+p {
+    color: var(--primary-100);
+    mix-blend-mode: difference;
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+    font-size: clamp(1rem, calc(10px + 0.6vw), 1.2rem);
+}
+
+italic {
+    font-style: italic;
+}
+
+li {
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    line-height: 114%;
+    font-weight: 100;
+    font-size: clamp(1rem, calc(10px + 0.6vw), 1.2rem);
+}
+
+figcaption {
+    color: rgba(207, 181, 234, 0.5);
+    margin-top: 0.3rem;
+    mix-blend-mode: difference;
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    font-size: clamp(1rem, calc(10px + 0.6vw), 1.2rem);
+}
+
+strong {
+    font-weight: bold;
+}
+
+.button {
+    color: var(--white);
+    mix-blend-mode: normal;
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid var(--font);
+    border-radius: 75px;
+    padding: 0.4rem 1.5rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #d3cadb;
+}

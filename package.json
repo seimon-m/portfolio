@@ -1,32 +1,23 @@
 {
-	"name": "seimon.ch",
+	"name": "portfolio",
 	"version": "0.0.1",
+	"private": true,
 	"scripts": {
-		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
-		"package": "svelte-kit package",
-		"preview": "svelte-kit preview",
-		"prepare": "svelte-kit sync",
-		"check": "svelte-check --tsconfig ./jsconfig.json",
-		"check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
-		"test": "playwright test",
-		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
-		"format": "prettier --write --plugin-search-dir=. ."
+		"dev": "vite dev",
+		"build": "vite build"
 	},
 	"devDependencies": {
-		"@playwright/test": "^1.22.2",
-		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/adapter-vercel": "^1.0.0-next.58",
-		"@sveltejs/kit": "next",
-		"eslint": "^8.16.0",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-plugin-svelte3": "^4.0.0",
-		"prettier": "^2.6.2",
-		"prettier-plugin-svelte": "^2.7.0",
-		"svelte": "^3.44.0",
-		"svelte-check": "^2.7.1",
-		"typescript": "^4.7.2",
-		"svelte-preprocess": "^4.10.6"
+		"@sveltejs/adapter-auto": "^2.1.0",
+		"@sveltejs/adapter-vercel": "^3.0.1",
+		"@sveltejs/kit": "^1.15.1",
+		"svelte": "^3.59.1",
+		"vite": "^4.1.1"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@vercel/analytics": "^1.0.1",
+		"gsap": "^3.11.3",
+		"svelte-kit": "^1.2.0",
+		"vanilla-tilt": "^1.8.0"
+	}
 }

@@ -1,0 +1,51 @@
+[
+    {
+        "id": 0,
+        "title": "Don't Answer Be Happy",
+        "url": "dont-answer-be-happy",
+        "tags": "installation",
+        "image": "/projects/dont-answer-be-happy/Bild-WWWerkschau-5.jpg"
+    },
+    {
+        "id": 1,
+        "title": "Flushway",
+        "url": "flushway",
+        "tags": "website",
+        "image": "/projects/flushway/flushway-screenshot_01.png"
+    },
+    {
+        "id": 3,
+        "title": "Träum von mir",
+        "url": "traeum-von-mir",
+        "tags": "performance",
+        "image": "/projects/traeum-von-mir/traeum-von-mir_1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "curious.images",
+        "url": "curious.images",
+        "tags": "website",
+        "image": "/projects/curious.images/curious.images-1.png"
+    },
+    {
+        "id": 4,
+        "title": "Hypnose Lyss",
+        "url": "hypnose-lyss",
+        "tags": "website",
+        "image": "/projects/hypnose-lyss/hypnose-lyss-0.png"
+    },
+    {
+        "id": 5,
+        "title": "Global Income Growth",
+        "url": "global-income-growth",
+        "tags": "data visualization",
+        "image": "/projects/global-income-growth/global-income-growth-0.png"
+    },
+    {
+        "id": 5,
+        "title": "ahoi",
+        "url": "ahoi",
+        "tags": "editorial design",
+        "image": "/projects/ahoi/ahoi-1.jpg"
+    }
+]
