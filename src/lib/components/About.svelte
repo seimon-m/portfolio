@@ -14,27 +14,32 @@
         <h3>I'm Simon,</h3>
         <p class="intro__text">
             a designer, web developer, and media artist based in Bern,
-            Switzerland. My work transcends the boundaries of the screen,
-            exploring the space beyond and blurring the lines between the
-            physical and the digital. My goal is always to craft immersive
-            experiences that captivate people.
+            Switzerland. My practice includes experimental immersive projects as
+            well as more traditional works for the digital and analog realms.
         </p>
         <p />
         <p class="intro__text">
             I graduated from the Lucerne University of Applied Sciences and Arts
             with a Bachelor's degree in Digital Ideation. Although a newcomer to
             the field of media art, I already completed several projects in this
-            realm, in addition to my effort in web development. My works combine
-            physical and electronic elements, creating an immersive experience
-            that explores the intersection between technology and humanity. In
-            my works, the audience is encouraged to contemplate the ways in
-            which technology shapes our perceptions of the world.
+            realm, in addition to my efforts in web development. My works in the
+            spatial context combinse physical and digital elements, creating an
+            immersive experience that explores the intersection between
+            technology and humanity. In those, the audience is encouraged to
+            contemplate the ways in which technology shapes our perceptions of
+            the world.
         </p>
         <p />
         <p class="intro__text">
             Explore my portfolio to get a sense of my work, and feel free to
             reach out if you're interested in collaborating or if you have some
             questions.
+        </p>
+
+        <p class="intro__text">
+            PS: Did you notice the favicon? I am a huge lover of all kinds of
+            olives and I kind of have them under my skin too. Just a fact about
+            me.
         </p>
     </div>
     <div class="passion card">
@@ -66,6 +71,10 @@
 </div>
 
 <style>
+    .ps {
+        position: relative;
+        bottom: 0;
+    }
     .about {
         display: grid;
         gap: 1.5rem;
