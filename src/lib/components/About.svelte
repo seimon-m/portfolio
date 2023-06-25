@@ -36,10 +36,10 @@
             questions.
         </p>
 
-        <p class="intro__text">
+        <p class="intro__text olive">
             PS: Did you notice the favicon? I am a huge lover of all kinds of
-            olives and I kind of have them under my skin too. Just a fact about
-            me.
+            olives and I kind of have them under my skin too. Just a personal
+            fact about me.
         </p>
     </div>
     <div class="passion card">
@@ -71,10 +71,6 @@
 </div>
 
 <style>
-    .ps {
-        position: relative;
-        bottom: 0;
-    }
     .about {
         display: grid;
         gap: 1.5rem;
@@ -101,6 +97,10 @@
     }
     .intro__text:last-child {
         margin-bottom: 0;
+    }
+
+    .olive {
+        display: none;
     }
 
     .social {
@@ -145,11 +145,14 @@
             left: -8vw;
             top: -15%;
             width: 120%;
-            /* transform: translateX(-10%); */
         }
 
         .passion {
             margin-top: -90%;
+        }
+
+        .olive {
+            display: unset;
         }
     }
 
