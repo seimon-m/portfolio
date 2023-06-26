@@ -36,11 +36,11 @@
             questions.
         </p>
 
-        <p class="intro__text olive">
+        <!-- <p class="intro__text olive">
             PS: Did you notice the favicon? I am a huge lover of all kinds of
             olives and I kind of have them under my skin too. Just a personal
             fact about me.
-        </p>
+        </p> -->
     </div>
     <div class="passion card">
         <h3>Things I am passionate about</h3>
