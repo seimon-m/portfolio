@@ -1,6 +1,6 @@
 <script>
     import simon_wide from "$lib/assets/simon_wide.jpg";
-    import cv from "$lib/assets/lebenslauf.pdf";
+    import cv from "$lib/assets/CV-Simon-Müller.pdf";
     import Link from "./Link.svelte";
     import { tiltButton } from "$lib/scripts/effects";
 </script>
@@ -22,7 +22,7 @@
             I graduated from the Lucerne University of Applied Sciences and Arts
             with a Bachelor's degree in Digital Ideation. Although a newcomer to
             the field of media art, I already completed several projects in this
-            realm, in addition to my efforts in web development. My works in the
+            field, in addition to my efforts in web development. My works in the
             spatial context combinse physical and digital elements, creating an
             immersive experience that explores the intersection between
             technology and humanity. In those, the audience is encouraged to

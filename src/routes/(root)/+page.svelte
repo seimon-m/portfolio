@@ -26,7 +26,7 @@
 <div class="container">
     <div class="content">
         <section class="start">
-            <a
+            <!-- <a
                 class="button"
                 target="_blank"
                 href="mailto:hey@seimon.ch"
@@ -34,7 +34,7 @@
             >
                 <p>Available for freelance work</p>
                 <p>hey@seimon.ch</p>
-            </a>
+            </a> -->
 
             <h1 class="start-title">Media artist, Coder and Designer</h1>
             <div class="scroll-indicator">
@@ -100,7 +100,7 @@
     .start-title {
         padding: 0 1rem 0rem 1rem;
         max-width: 1800px;
-        margin-bottom: 20vh;
+        margin-bottom: 5vh;
         margin-left: 2vw;
     }
 
@@ -192,9 +192,9 @@
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
-        .start-title {
+        /* .start-title {
             margin-bottom: 15vh;
-        }
+        } */
         .section-title {
             top: 8%;
             transform: rotate(-90deg) translateX(-105%) translateY(-20%);
@@ -210,14 +210,14 @@
             transform: rotate(-90deg) translateX(-110%) translateY(-20%);
         }
         .start-title {
-            margin-bottom: 20vh;
+            /* margin-bottom: 20vh; */
             margin-left: 2vw;
             font-size: clamp(10px, calc(7vw + 22px), 150px);
         }
     }
     @media only screen and (min-width: 1400px) {
         .start-title {
-            margin-bottom: 15vh;
+            /* margin-bottom: 15vh; */
             margin-left: 2vw;
             font-size: clamp(10px, calc(8vw + 22px), 200px);
         }
