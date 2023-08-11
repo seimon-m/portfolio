@@ -29,18 +29,18 @@
             contemplate the ways in which technology shapes our perceptions of
             the world.
         </p>
+
+        <p class="intro__text">
+            I also have a strong desire in working with people and am passionate
+            about making a positive impact.
+        </p>
+
         <p />
         <p class="intro__text">
             Explore my portfolio to get a sense of my work, and feel free to
             reach out if you're interested in collaborating or if you have some
             questions.
         </p>
-
-        <!-- <p class="intro__text olive">
-            PS: Did you notice the favicon? I am a huge lover of all kinds of
-            olives and I kind of have them under my skin too. Just a personal
-            fact about me.
-        </p> -->
     </div>
     <div class="passion card">
         <h3>Things I am passionate about</h3>
@@ -48,7 +48,9 @@
             <li>Webdevelopment</li>
             <li>Webdesign</li>
             <li>Creative Coding</li>
+            <li>Intercultural Exchange</li>
             <li>UX Design</li>
+            <li>Working with a wide diversity of people</li>
             <li>Interaction Design</li>
             <li>Photogaphie</li>
             <li>New Media Art</li>
@@ -99,10 +101,6 @@
         margin-bottom: 0;
     }
 
-    .olive {
-        display: none;
-    }
-
     .social {
         display: flex;
         flex-direction: column;
@@ -150,21 +148,17 @@
         .passion {
             margin-top: -90%;
         }
-
-        .olive {
-            display: unset;
-        }
     }
 
     @media only screen and (min-width: 900px) {
         .passion {
-            margin-top: -60%;
+            margin-top: -100%;
         }
     }
 
     @media only screen and (min-width: 1000px) {
         .passion {
-            margin-top: -40%;
+            margin-top: -70%;
         }
     }
 
@@ -173,16 +167,23 @@
             padding: 3em;
         }
         .passion {
-            margin-top: -30%;
+            margin-top: -55%;
         }
     }
     @media only screen and (min-width: 1385px) {
         .passion {
-            margin-top: -20%;
+            margin-top: -45%;
         }
     }
     @media only screen and (min-width: 1500px) {
         .passion {
+            margin-top: -20%;
+        }
+    }
+
+    @media only screen and (min-width: 1700px) {
+        .passion,
+        .social {
             margin-top: -10%;
         }
     }
