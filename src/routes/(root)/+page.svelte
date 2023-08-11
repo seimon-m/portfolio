@@ -36,12 +36,20 @@
                 <p>hey@seimon.ch</p>
             </a> -->
 
-            <h1 class="start-title">Media artist, Coder and Designer</h1>
-            <div class="scroll-indicator">
-                <p class="scroll-text">
-                    <span>scroll down</span>
-                </p>
-                <span style="z-index: 0;transform: matrix(1, 0, 0, 1, 0, 0);" />
+            <div class="start-title">
+                <h1>Media artist,</h1>
+                <h1>Creative Coder &</h1>
+                <h1>Interaction Designer</h1>
+                <div>
+                    <div class="scroll-indicator">
+                        <p class="scroll-text">
+                            <span>scroll down</span>
+                        </p>
+                        <span
+                            style="z-index: 0;transform: matrix(1, 0, 0, 1, 0, 0);"
+                        />
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section work" id="work">
@@ -82,7 +90,7 @@
         margin-top: 15vh;
         height: 84vh;
         display: flex;
-        align-items: center;
+        align-items: start;
         flex-direction: column;
         justify-content: space-around;
         border-radius: 10px;
@@ -98,10 +106,9 @@
     }
 
     .start-title {
-        padding: 0 1rem 0rem 1rem;
+        margin: 2em;
         max-width: 1800px;
         margin-bottom: 5vh;
-        margin-left: 2vw;
     }
 
     .section-title {
@@ -192,9 +199,9 @@
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
-        /* .start-title {
-            margin-bottom: 15vh;
-        } */
+        .start-title {
+            margin: 0em 0.1em;
+        }
         .section-title {
             top: 8%;
             transform: rotate(-90deg) translateX(-105%) translateY(-20%);
@@ -210,16 +217,13 @@
             transform: rotate(-90deg) translateX(-110%) translateY(-20%);
         }
         .start-title {
-            /* margin-bottom: 20vh; */
-            margin-left: 2vw;
             font-size: clamp(10px, calc(7vw + 22px), 150px);
         }
     }
     @media only screen and (min-width: 1400px) {
         .start-title {
-            /* margin-bottom: 15vh; */
-            margin-left: 2vw;
             font-size: clamp(10px, calc(8vw + 22px), 200px);
+            max-width: 1900px;
         }
     }
 
@@ -228,11 +232,9 @@
             margin-left: -50vw;
             transform: rotate(-90deg) translateX(-141%) translateY(-10%);
         }
-        /* .start-title {
-            padding: 0 1rem 0rem 1rem;
-            max-width: 1800px;
-            margin-bottom: 10vh;
-            margin-left: 2vw;
-        } */
+
+        .start-title {
+            max-width: 2500px;
+        }
     }
 </style>
