@@ -40,6 +40,7 @@
         padding-bottom: 1rem;
         padding-left: 1rem;
         padding-right: 2rem;
+        margin: 0;
         line-height: 90%;
         hyphens: auto;
         word-break: break-word;
