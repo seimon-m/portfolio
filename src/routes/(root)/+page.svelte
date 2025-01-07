@@ -37,7 +37,7 @@
             </a> -->
 
             <div class="start-title">
-                <h1>Media Artist,</h1>
+                <h1>Web Entwickler,</h1>
                 <h1>Creative Coder &</h1>
                 <h1>Interaction Designer</h1>
                 <div>

@@ -63,7 +63,7 @@
         <a class="button" href="mailto:hey@seimon.ch" use:tiltButton
             >Write an Email</a
         >
-        <Link href={cv} target="_blank" rel="noreferrer">Download CV</Link>
+        <!-- <Link href={cv} target="_blank" rel="noreferrer">Download CV</Link> -->
 
         <Link href="https://github.com/seimon-m">Meet at GitHub</Link>
         <Link href="https://www.linkedin.com/in/seimon-m/"
