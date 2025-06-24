@@ -1,6 +1,6 @@
 # Portfolio Simon Müller
 
-This is the source code for my brand new personal portfolio website.
+This is the source code for portfolio website.
 You can visit it [here](https://seimon.ch).
 
 Used Technologies:
@@ -21,4 +21,4 @@ Clone this repository. You will need `Node.js` and `Git` installed globally on y
 Open [http://localhost:5173](http://localhost:5173/) to see it live in the browser. Hot-reloading is supported, so any changes you make should be visible immediately.
 
 ## Contributon
-I won't accept any pull-requests. But you can fork the repo and do whatever you want with it.
+I won't accept any pull requests. But you can fork the repo and do whatever you want with it.
