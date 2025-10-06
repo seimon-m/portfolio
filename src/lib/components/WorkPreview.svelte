@@ -1,14 +1,29 @@
 <script>
-    export let project;
+    const { project } = $props();
     import { tilt } from "$lib/scripts/effects";
+    
+    let imageUrl = $state('');
+
+    $effect(() => {
+        if (project?.image) {
+            imageUrl = project.image.startsWith('/') 
+                ? project.image 
+                : `/${project.image}`;
+            console.log('Image URL:', imageUrl);
+        } else {
+            imageUrl = '';
+        }
+    });
 </script>
 
 <a
-    class={($$restProps.class || "") + " work-container"}
+    class="work-container"
     href="/{project.url}"
     use:tilt
 >
-    <img src={project?.image} alt="random" />
+    {#if imageUrl}
+        <img src={imageUrl} alt={project.title} />
+    {/if}
     <div class="text">
         <h3 class="heading">{project.title}</h3>
         <p class="tags">{project.tags}</p>

@@ -1,12 +1,12 @@
 <script>
-    import simon_wide from "$lib/assets/simon_wide.jpg";
+    import simon_wide from "$lib/assets/simon_wide.jpg?enhanced";
     import cv from "$lib/assets/CV-Simon-Müller.pdf";
     import Link from "./Link.svelte";
     import { tiltButton } from "$lib/scripts/effects";
 </script>
 
 <div class="about">
-    <img
+    <enhanced:img
         src={simon_wide}
         alt="me in front of a concrete wall with two different light sources from the left in bluish light and from the right in yellowish light"
     />
@@ -85,6 +85,7 @@
         width: 100%;
         border-radius: 10px;
         margin: 0;
+		height: auto;
     }
 
     a {
