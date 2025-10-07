@@ -4,9 +4,11 @@
     import { onMount } from "svelte";
     import "$lib/styles/global.css";
     import WorkPreview from "$lib/components/WorkPreview.svelte";
-    import projects from "$lib/data/work.json";
     import About from "$lib/components/About.svelte";
     import { tiltButton } from "$lib/scripts/effects";
+
+    export let data;
+    const projects = data.projects;
 
     onMount(() => {
         gsap.registerPlugin(ScrollTrigger);

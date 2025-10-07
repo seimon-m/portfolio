@@ -2,18 +2,8 @@
     const { project } = $props();
     import { tilt } from "$lib/scripts/effects";
     
-    let imageUrl = $state('');
-
-    $effect(() => {
-        if (project?.image) {
-            imageUrl = project.image.startsWith('/') 
-                ? project.image 
-                : `/${project.image}`;
-            console.log('Image URL:', imageUrl);
-        } else {
-            imageUrl = '';
-        }
-    });
+    // Check if image is an enhanced image object or a string URL
+    let isEnhancedImage = $derived(project?.image && typeof project.image === 'object');
 </script>
 
 <a
@@ -21,8 +11,12 @@
     href="/{project.url}"
     use:tilt
 >
-    {#if imageUrl}
-        <img src={imageUrl} alt={project.title} />
+    {#if project?.image}
+        {#if isEnhancedImage}
+            <enhanced:img src={project.image} alt={project.title} />
+        {:else}
+            <img src={project.image.startsWith('/') ? project.image : `/${project.image}`} alt={project.title} />
+        {/if}
     {/if}
     <div class="text">
         <h3 class="heading">{project.title}</h3>
@@ -39,6 +33,10 @@
         flex-direction: column;
     }
 
+    picture {
+        position: relative;
+    }
+
     img {
         aspect-ratio: 3 / 1.95;
         object-fit: cover;
@@ -47,6 +45,7 @@
         width: 90%;
         z-index: 1;
         max-height: 90vh;
+        height: auto;
     }
 
     h3 {
