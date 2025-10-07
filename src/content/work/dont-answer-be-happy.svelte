@@ -1,39 +1,37 @@
-<section class="project">
-    <div class="left">
-        <a class="back-button" href="/#work">
-            <svg
-                class="arrow"
-                width="19"
-                height="16"
-                viewBox="0 0 19 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    class="arrow"
-                    d="M18 9C18.5523 9 19 8.55228 19 8C19 7.44772 18.5523 7 18 7V9ZM0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM18 7L1 7V9L18 9V7Z"
-                    fill="black"
-                />
-            </svg>
-            <p>works</p>
-        </a>
+<script context="module">
+    export const metadata = {
+        id: 0,
+        title: "Don't Answer Be Happy",
+        tags: "installation",
+        image: "/projects/dont-answer-be-happy/Bild-WWWerkschau-5.jpg",
+        date: "2023-05-01",
+    };
+</script>
+
+<script>
+    import WorkLayout from "$lib/layouts/WorkLayout.svelte";
+</script>
+
+<WorkLayout>
+    <svelte:fragment slot="left">
         <img
             class="heroimage"
             src="/projects/dont-answer-be-happy/Bild-WWWerkschau-1.jpg"
-            alt=""
+            alt="Don't Answer Be Happy installation"
         />
+
         <div class="infos">
             <h3 class="title">Don't Answer Be Happy</h3>
+
             <p>
-                The installation <italic>Don't Answer Be Happy</italic> creates
-                an interactive experience in which everything revolves around
-                the personal smartphone. Engrossed in a conversation between
-                their own personal smartphone and the surrounding artificial
-                intelligence, visitors are compelled to take a stand.
-                Confrontations with the ambivalence of digital reality arise,
-                and evasion is not possible. The experienced space reflects upon
-                the digital colonization regarding people and regions of this
-                world outside of global tech hotspots.
+                The installation <italic>Don't Answer Be Happy</italic> creates an
+                interactive experience in which everything revolves around the personal
+                smartphone. Engrossed in a conversation between their own personal
+                smartphone and the surrounding artificial intelligence, visitors
+                are compelled to take a stand. Confrontations with the ambivalence
+                of digital reality arise, and evasion is not possible. The experienced
+                space reflects upon the digital colonization regarding people and
+                regions of this world outside of global tech hotspots.
             </p>
 
             <div class="special">
@@ -46,9 +44,9 @@
                     >
                         Mapping Festival 2023
                     </a>
-                    in Geneva. For this reason, RTS produced a report on this
-                    project, which was broadcast on the most important news
-                    program in the Romandie.
+                    in Geneva. For this reason, RTS produced a report on this project,
+                    which was broadcast on the most important news program in the
+                    Romandie.
                 </p>
 
                 <iframe
@@ -56,13 +54,13 @@
                     allowfullscreen
                     allow="geolocation *; autoplay; encrypted-media"
                 ></iframe>
+
                 <figcaption>
                     This video is in French. The article with further content is
                     available here:
                     <a
                         href="https://www.rts.ch/info/culture/14053549-le-mapping-festival-interroge-notre-relation-a-la-technologie.html"
-                        target="_blank"
-                        >rts.ch</a
+                        target="_blank">rts.ch</a
                     >
                 </figcaption>
             </div>
@@ -78,6 +76,7 @@
                     server and the real-time communication between these.
                 </p>
             </div>
+
             <div>
                 <h4>Tech Stack</h4>
                 <ul class="list">
@@ -90,6 +89,7 @@
                     <li>Express.js</li>
                 </ul>
             </div>
+
             <iframe
                 width="100%"
                 src="https://www.youtube-nocookie.com/embed/7n1KBsXx-IU?modestbranding=1&amp;cc_load_policy=1"
@@ -98,12 +98,13 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen=""
             ></iframe>
+
             <div>
                 <h4>Background</h4>
                 <p>
                     Conceptually the installation addresses the discourse of
                     globalized technology and peeks behind the curtain of the
-                    hype surrounding artificial intelligence. In essence, it’s
+                    hype surrounding artificial intelligence. In essence, it's
                     about how technological developments have an impact on our
                     society and what this means for different regions and
                     peoples of this world. Many tech solutions that have become
@@ -112,22 +113,21 @@
                     exploitation of the global South. Without the major
                     discrepancy in income and living conditions, we would not be
                     able to live out this (in our case) tech luxury to this
-                    extent. The installation
-                    <italic>Don't Answer Be Happy</italic> focuses on the people
-                    who make Western tech luxury possible in the first place
-                    through their daily work in precarious conditions, be it
-                    clickwork in the creation of datasets that serve as the
-                    basis for AI algorithms, in content moderation, in the
-                    production of electronic devices or in their recycling. In
-                    the Congo, people are exploited to extract gold and cobalt
-                    for our smartphones. In China, workers have to assemble
-                    electronic devices which they could never afford due to non
-                    livable wages. In order for us to use social media without
-                    images of violence and abuse, people have to categorize
-                    images of violence, racism, and sexual assault every day. AI
-                    systems are only highly “intelligent” because they have been
-                    trained by thousands of clickworkers in India. However for
-                    us living in the global North, this side of digital reality
+                    extent. The installation <italic
+                        >Don't Answer Be Happy</italic
+                    > focuses on the people who make Western tech luxury possible
+                    in the first place through their daily work in precarious conditions,
+                    be it clickwork in the creation of datasets that serve as the
+                    basis for AI algorithms, in content moderation, in the production
+                    of electronic devices or in their recycling. In the Congo, people
+                    are exploited to extract gold and cobalt for our smartphones.
+                    In China, workers have to assemble electronic devices which they
+                    could never afford due to non livable wages. In order for us
+                    to use social media without images of violence and abuse, people
+                    have to categorize images of violence, racism, and sexual assault
+                    every day. AI systems are only highly "intelligent" because they
+                    have been trained by thousands of clickworkers in India. However
+                    for us living in the global North, this side of digital reality
                     is not largely visible.
                 </p>
             </div>
@@ -145,19 +145,17 @@
             <div>
                 <h4>Narration</h4>
                 <p>
-                    In the installation
-                    <italic>Don't Answer Be Happy</italic> we have developed a
-                    narrative around the personal smartphone, which deals with
-                    the issues described previously. The smartphone is the focal
-                    point and the depicting element that perfectly represents
-                    the difficulties created by technological globalization and
-                    digital colonization. In the installation the role of the
-                    visitor is inverted. The visitor is degraded to a
-                    clickworker and only acts as an extended arm of the
-                    smartphone. The smartphone develops an intelligence, but
-                    does not understand the irrationality and contradictory
-                    nature of human interaction with technology and begins to
-                    ask naive questions to its user. The visitor is confronted
+                    In the installation <italic>Don't Answer Be Happy</italic> we
+                    have developed a narrative around the personal smartphone, which
+                    deals with the issues described previously. The smartphone is
+                    the focal point and the depicting element that perfectly represents
+                    the difficulties created by technological globalization and digital
+                    colonization. In the installation the role of the visitor is
+                    inverted. The visitor is degraded to a clickworker and only acts
+                    as an extended arm of the smartphone. The smartphone develops
+                    an intelligence, but does not understand the irrationality and
+                    contradictory nature of human interaction with technology and
+                    begins to ask naive questions to its user. The visitor is confronted
                     with questions and is required to take a stance.
                 </p>
             </div>
@@ -176,10 +174,11 @@
                     immersive experience.
                 </p>
             </div>
+
             <figure>
                 <img
                     src="/projects/dont-answer-be-happy/techstack.jpg"
-                    alt=""
+                    alt="Technology overview"
                 />
                 <figcaption>Technology overview</figcaption>
             </figure>
@@ -188,50 +187,54 @@
                 <h4>Credits</h4>
                 <ul class="list">
                     <li>
-                        Concept, Design, Programming, Setup -
-                        <strong>Jonas Wolter, Simon Müller</strong>
+                        Concept, Design, Programming, Setup - <strong
+                            >Jonas Wolter, Simon Müller</strong
+                        >
                     </li>
                     <li>Sound Design - <strong>Said Boulacen</strong></li>
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="images right">
-        <img
-            src="/projects/dont-answer-be-happy/Bild-WWWerkschau-2.jpg"
-            alt=""
-        />
-        <img
-            src="/projects/dont-answer-be-happy/Bild-WWWerkschau-3.jpg"
-            alt=""
-        />
-        <img
-            src="/projects/dont-answer-be-happy/Bild-WWWerkschau-4.jpg"
-            alt=""
-        />
-        <img
-            src="/projects/dont-answer-be-happy/Bild-WWWerkschau-5.jpg"
-            alt=""
-        />
-        <img
-            src="/projects/dont-answer-be-happy/Bild-WWWerkschau-6.jpg"
-            alt=""
-        />
-        <img
-            src="/projects/dont-answer-be-happy/Bild-WWWerkschau-1.jpg"
-            alt=""
-        />
-        <img
-            src="/projects/dont-answer-be-happy/Bild-WWWerkschau-7.jpg"
-            alt=""
-        />
-        <img
-            src="/projects/dont-answer-be-happy/Bild-WWWerkschau-8.jpg"
-            alt=""
-        />
-        <img
-            src="/projects/dont-answer-be-happy/Mapping_Festival_1.jpg"
-            alt=""
-        />
-    </div>
-</section>
+    </svelte:fragment>
+
+    <svelte:fragment slot="right">
+        <div class="images right">
+            <img
+                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-2.jpg"
+                alt=""
+            />
+            <img
+                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-3.jpg"
+                alt=""
+            />
+            <img
+                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-4.jpg"
+                alt=""
+            />
+            <img
+                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-5.jpg"
+                alt=""
+            />
+            <img
+                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-6.jpg"
+                alt=""
+            />
+            <img
+                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-1.jpg"
+                alt=""
+            />
+            <img
+                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-7.jpg"
+                alt=""
+            />
+            <img
+                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-8.jpg"
+                alt=""
+            />
+            <img
+                src="/projects/dont-answer-be-happy/Mapping_Festival_1.jpg"
+                alt=""
+            />
+        </div>
+    </svelte:fragment>
+</WorkLayout>

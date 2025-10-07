@@ -1,15 +1,22 @@
 import { redirect } from "@sveltejs/kit";
 
-export const load = async ({ fetch, params }) => {
-    const slug = params["slug"];
-    const res = await fetch(`projects/${slug}/${slug}.html`);
-    if (res.status !== 200) {
-        throw redirect(307, "/#work");
-    }
-    const post = await res.text();
+// Automatically load all Svelte content files
+const modules = import.meta.glob("/src/content/work/*.svelte", { eager: true });
 
-    return {
-        slug,
-        post,
-    };
+export const load = async ({ data }) => {
+    const { slug } = data;
+
+    // Find the Svelte component by slug
+    const modulePath = `/src/content/work/${slug}.svelte`;
+    const module = modules[modulePath];
+
+    if (module) {
+        return {
+            slug,
+            Component: module.default,
+        };
+    }
+
+    // If content doesn't exist, redirect to homepage
+    throw redirect(307, "/#work");
 };

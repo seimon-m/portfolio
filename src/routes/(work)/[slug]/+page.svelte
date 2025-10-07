@@ -1,7 +1,5 @@
 <script>
-	export let data;
+    export let data;
 </script>
 
-<div>
-	{@html data.post}
-</div>
+<svelte:component this={data.Component} />
