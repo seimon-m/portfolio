@@ -37,9 +37,9 @@
             </a> -->
 
             <div class="start-title">
-                <h1>Web Entwickler,</h1>
-                <h1>Creative Coder &</h1>
-                <h1>Interaction Designer</h1>
+                <h1>Developer,</h1>
+                <h1>Interaction Designer &</h1>
+                <h1>Creative Thinker</h1>
                 <div>
                     <div class="scroll-indicator">
                         <p class="scroll-text">

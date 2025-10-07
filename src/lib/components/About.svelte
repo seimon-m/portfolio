@@ -1,191 +1,177 @@
 <script>
-    import simon_wide from "$lib/assets/simon_wide.jpg?enhanced";
-    import cv from "$lib/assets/CV-Simon-Müller.pdf";
-    import Link from "./Link.svelte";
-    import { tiltButton } from "$lib/scripts/effects";
+  import simon_wide from "$lib/assets/simon_wide.jpg?enhanced";
+  import cv from "$lib/assets/CV-Simon-Müller.pdf";
+  import Link from "./Link.svelte";
+  import { tiltButton } from "$lib/scripts/effects";
 </script>
 
 <div class="about">
-    <enhanced:img
-        src={simon_wide}
-        alt="me in front of a concrete wall with two different light sources from the left in bluish light and from the right in yellowish light"
-    />
-    <div class="intro card">
-        <h3>I'm Simon,</h3>
-        <p class="intro__text">
-            a designer, web developer, and media artist based in Bern,
-            Switzerland. My practice includes experimental immersive projects as
-            well as more traditional works for the digital and analog realms.
-        </p>
-        <p />
-        <p class="intro__text">
-            I graduated from the Lucerne University of Applied Sciences and Arts
-            with a Bachelor's degree in Digital Ideation. Although a newcomer to
-            the field of media art, I already completed several projects in this
-            field, in addition to my efforts in web development. My works in the
-            spatial context combinse physical and digital elements, creating an
-            immersive experience that explores the intersection between
-            technology and humanity. In those, the audience is encouraged to
-            contemplate the ways in which technology shapes our perceptions of
-            the world.
-        </p>
+  <enhanced:img
+    src={simon_wide}
+    alt="me in front of a concrete wall with two different light sources from the left in bluish light and from the right in yellowish light"
+  />
+  <div class="intro card">
+    <h3>I'm Simon</h3>
+    <p class="intro__text">
+      a designer, developer, and creative mind from Bern, Switzerland. I like
+      working where technology, design, and storytelling meet.
+    </p>
+    <p class="intro__text">
+      I studied Digital Ideation at the Lucerne University of Applied Sciences
+      and Arts, where I explored how digital tools can shape experiences, both
+      online and in physical space. Since then, I have worked on a mix of
+      projects: from interactive installations and experimental media pieces to
+      custom websites and learning applications.
+    </p>
+    <p class="intro__text">
+        My work often plays with contrasts: analog and digital, human and machine, functional and poetic. I enjoy translating complex ideas into accessible, engaging experiences and collaborating with people who care about what they create.
+    </p>
+    <p class="intro__text">
+        Have a look around and feel free to get in touch if you would like to collaborate or just talk about ideas.
+    </p>
+  </div>
+  <div class="passion card">
+    <h3>Things that inspire me</h3>
+    <ul>
+      <li>thoughtful digital design and meaningful user experiences</li>
+      <li>creative coding and playful experimentation</li>
+      <li>exploring how technology shapes human connection</li>
+      <li>collaboration and cultural exchange</li>
+      <li>photography and visual storytelling</li>
+      <li>Working with a wide diversity of people</li>
+      <li>interactive and media art in physical spaces</li>
+      <li>learning, curiosity, and new perspectives</li>
+    </ul>
+  </div>
 
-        <p class="intro__text">
-            I also have a strong desire in working with people and am passionate
-            about making a positive impact.
-        </p>
+  <div class="social card">
+    <h3>Get in touch</h3>
+    <a class="button" href="mailto:hey@seimon.ch" use:tiltButton
+      >Write an Email</a
+    >
+    <!-- <Link href={cv} target="_blank" rel="noreferrer">Download CV</Link> -->
 
-        <p />
-        <p class="intro__text">
-            Explore my portfolio to get a sense of my work, and feel free to
-            reach out if you're interested in collaborating or if you have some
-            questions.
-        </p>
-    </div>
-    <div class="passion card">
-        <h3>Things I am passionate about</h3>
-        <ul>
-            <li>Webdevelopment</li>
-            <li>Webdesign</li>
-            <li>Creative Coding</li>
-            <li>Intercultural Exchange</li>
-            <li>UX Design</li>
-            <li>Working with a wide diversity of people</li>
-            <li>Interaction Design</li>
-            <li>Photogaphie</li>
-            <li>New Media Art</li>
-            <li>Physical Computing</li>
-        </ul>
-    </div>
-
-    <div class="social card">
-        <h3>Get in touch</h3>
-        <a class="button" href="mailto:hey@seimon.ch" use:tiltButton
-            >Write an Email</a
-        >
-        <!-- <Link href={cv} target="_blank" rel="noreferrer">Download CV</Link> -->
-
-        <Link href="https://github.com/seimon-m">Meet at GitHub</Link>
-        <Link href="https://www.linkedin.com/in/seimon-m/"
-            >Connect on LinkedIn</Link
-        >
-    </div>
+    <Link href="https://github.com/seimon-m">Meet at GitHub</Link>
+    <Link href="https://www.linkedin.com/in/seimon-m/">Connect on LinkedIn</Link
+    >
+  </div>
 </div>
 
 <style>
+  .about {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    background-color: var(--primary-100);
+    border-radius: 10px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 0;
+    height: auto;
+  }
+
+  a {
+    color: var(--font);
+  }
+  .card {
+    padding: 0 1.2rem 1.2rem 1.2rem;
+  }
+
+  .intro__text {
+    margin-bottom: 1em;
+  }
+  .intro__text:last-child {
+    margin-bottom: 0;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    gap: 0.8rem;
+  }
+
+  h3 {
+    font-size: 48px;
+    margin-bottom: 0.2em;
+  }
+
+  ul:last-of-type {
+    border-bottom: 0.5px solid black;
+  }
+
+  li {
+    padding: 1em 0 1em 0;
+    border-top: 0.5px solid black;
+    transition: all 0.4s ease-in-out;
+  }
+
+  li:hover {
+    background-color: var(--primary-100);
+    box-shadow:
+      inset 0px 11px 8px -10px #aa98be,
+      inset 0px -11px 8px -10px #aa98be;
+  }
+
+  @media only screen and (min-width: 768px) {
     .about {
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: 1fr;
-        background-color: var(--primary-100);
-        border-radius: 10px;
-    }
-
-    img {
-        width: 100%;
-        border-radius: 10px;
-        margin: 0;
-		height: auto;
-    }
-
-    a {
-        color: var(--font);
+      gap: 1.5rem;
+      margin-left: 8vw;
+      grid-template-columns: 1fr 1fr;
     }
     .card {
-        padding: 0 1.2rem 1.2rem 1.2rem;
+      padding: 2em;
+    }
+    img {
+      position: relative;
+      left: -8vw;
+      top: -15%;
+      width: 120%;
     }
 
-    .intro__text {
-        margin-bottom: 1em;
+    .passion {
+      margin-top: -90%;
     }
-    .intro__text:last-child {
-        margin-bottom: 0;
-    }
+  }
 
+  @media only screen and (min-width: 900px) {
+    .passion {
+      margin-top: -100%;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .passion {
+      margin-top: -70%;
+    }
+  }
+
+  @media only screen and (min-width: 1150px) {
+    .card {
+      padding: 3em;
+    }
+    .passion {
+      margin-top: -55%;
+    }
+  }
+  @media only screen and (min-width: 1385px) {
+    .passion {
+      margin-top: -45%;
+    }
+  }
+  @media only screen and (min-width: 1500px) {
+    .passion {
+      margin-top: -20%;
+    }
+  }
+
+  @media only screen and (min-width: 1700px) {
+    .passion,
     .social {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-        gap: 0.8rem;
+      margin-top: -10%;
     }
-
-    h3 {
-        font-size: 48px;
-        margin-bottom: 0.5em;
-    }
-
-    ul:last-of-type {
-        border-bottom: 0.5px solid black;
-    }
-
-    li {
-        padding: 1em 0 1em 0;
-        border-top: 0.5px solid black;
-        transition: all 0.4s ease-in-out;
-    }
-
-    li:hover {
-        background-color: var(--primary-100);
-        box-shadow: inset 0px 11px 8px -10px #aa98be,
-            inset 0px -11px 8px -10px #aa98be;
-    }
-
-    @media only screen and (min-width: 768px) {
-        .about {
-            gap: 1.5rem;
-            margin-left: 8vw;
-            grid-template-columns: 1fr 1fr;
-        }
-        .card {
-            padding: 2em;
-        }
-        img {
-            position: relative;
-            left: -8vw;
-            top: -15%;
-            width: 120%;
-        }
-
-        .passion {
-            margin-top: -90%;
-        }
-    }
-
-    @media only screen and (min-width: 900px) {
-        .passion {
-            margin-top: -100%;
-        }
-    }
-
-    @media only screen and (min-width: 1000px) {
-        .passion {
-            margin-top: -70%;
-        }
-    }
-
-    @media only screen and (min-width: 1150px) {
-        .card {
-            padding: 3em;
-        }
-        .passion {
-            margin-top: -55%;
-        }
-    }
-    @media only screen and (min-width: 1385px) {
-        .passion {
-            margin-top: -45%;
-        }
-    }
-    @media only screen and (min-width: 1500px) {
-        .passion {
-            margin-top: -20%;
-        }
-    }
-
-    @media only screen and (min-width: 1700px) {
-        .passion,
-        .social {
-            margin-top: -10%;
-        }
-    }
+  }
 </style>
