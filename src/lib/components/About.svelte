@@ -76,6 +76,7 @@
   a {
     color: var(--font);
   }
+
   .card {
     padding: 0 1.2rem 1.2rem 1.2rem;
   }
@@ -83,6 +84,7 @@
   .intro__text {
     margin-bottom: 1em;
   }
+
   .intro__text:last-child {
     margin-bottom: 0;
   }
@@ -122,9 +124,11 @@
       margin-left: 8vw;
       grid-template-columns: 1fr 1fr;
     }
+
     .card {
       padding: 2em;
     }
+
     img {
       position: relative;
       left: -8vw;
@@ -133,19 +137,30 @@
     }
 
     .passion {
-      margin-top: -90%;
+      margin-top: -100%;
     }
   }
-
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: 850px) {
     .passion {
       margin-top: -100%;
     }
   }
 
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 900px) {
     .passion {
-      margin-top: -70%;
+      margin-top: -80%;
+    }
+  }
+
+  @media only screen and (min-width: 990px) {
+    .passion {
+      margin-top: -60%;
+    }
+  }
+
+  @media only screen and (min-width: 1080px) {
+    .passion {
+      margin-top: -45%;
     }
   }
 
@@ -154,15 +169,23 @@
       padding: 3em;
     }
     .passion {
-      margin-top: -55%;
+      margin-top: -50%;
     }
   }
-  @media only screen and (min-width: 1385px) {
+
+  @media only screen and (min-width: 1200px) {
     .passion {
-      margin-top: -45%;
+      margin-top: -40%;
     }
   }
-  @media only screen and (min-width: 1500px) {
+
+  @media only screen and (min-width: 1350px) {
+    .passion {
+      margin-top: -30%;
+    }
+  }
+
+  @media only screen and (min-width: 1450px) {
     .passion {
       margin-top: -20%;
     }

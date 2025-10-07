@@ -1,22 +1,36 @@
 <script context="module">
+    import previewImage from "$lib/assets/projects/dont-answer-be-happy/Bild-WWWerkschau-5.jpg?enhanced";
+    
     export const metadata = {
         id: 0,
         title: "Don't Answer Be Happy",
         tags: "installation",
-        image: "/projects/dont-answer-be-happy/Bild-WWWerkschau-5.jpg",
+        image: previewImage,
         date: "2023-05-01",
     };
 </script>
 
 <script>
     import WorkLayout from "$lib/layouts/WorkLayout.svelte";
+    
+    // Import all images with enhanced processing
+    import heroImage from "$lib/assets/projects/dont-answer-be-happy/Bild-WWWerkschau-1.jpg?enhanced";
+    import image2 from "$lib/assets/projects/dont-answer-be-happy/Bild-WWWerkschau-2.jpg?enhanced";
+    import image3 from "$lib/assets/projects/dont-answer-be-happy/Bild-WWWerkschau-3.jpg?enhanced";
+    import image4 from "$lib/assets/projects/dont-answer-be-happy/Bild-WWWerkschau-4.jpg?enhanced";
+    import image5 from "$lib/assets/projects/dont-answer-be-happy/Bild-WWWerkschau-5.jpg?enhanced";
+    import image6 from "$lib/assets/projects/dont-answer-be-happy/Bild-WWWerkschau-6.jpg?enhanced";
+    import image7 from "$lib/assets/projects/dont-answer-be-happy/Bild-WWWerkschau-7.jpg?enhanced";
+    import image8 from "$lib/assets/projects/dont-answer-be-happy/Bild-WWWerkschau-8.jpg?enhanced";
+    import mappingImage from "$lib/assets/projects/dont-answer-be-happy/Mapping_Festival_1.jpg?enhanced";
+    import techstackImage from "$lib/assets/projects/dont-answer-be-happy/techstack.jpg?enhanced";
 </script>
 
 <WorkLayout>
     <svelte:fragment slot="left">
-        <img
+        <enhanced:img
             class="heroimage"
-            src="/projects/dont-answer-be-happy/Bild-WWWerkschau-1.jpg"
+            src={heroImage}
             alt="Don't Answer Be Happy installation"
         />
 
@@ -176,8 +190,8 @@
             </div>
 
             <figure>
-                <img
-                    src="/projects/dont-answer-be-happy/techstack.jpg"
+                <enhanced:img
+                    src={techstackImage}
                     alt="Technology overview"
                 />
                 <figcaption>Technology overview</figcaption>
@@ -199,40 +213,40 @@
 
     <svelte:fragment slot="right">
         <div class="images right">
-            <img
-                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-2.jpg"
+            <enhanced:img
+                src={image2}
                 alt=""
             />
-            <img
-                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-3.jpg"
+            <enhanced:img
+                src={image3}
                 alt=""
             />
-            <img
-                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-4.jpg"
+            <enhanced:img
+                src={image4}
                 alt=""
             />
-            <img
-                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-5.jpg"
+            <enhanced:img
+                src={image5}
                 alt=""
             />
-            <img
-                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-6.jpg"
+            <enhanced:img
+                src={image6}
                 alt=""
             />
-            <img
-                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-1.jpg"
+            <enhanced:img
+                src={heroImage}
                 alt=""
             />
-            <img
-                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-7.jpg"
+            <enhanced:img
+                src={image7}
                 alt=""
             />
-            <img
-                src="/projects/dont-answer-be-happy/Bild-WWWerkschau-8.jpg"
+            <enhanced:img
+                src={image8}
                 alt=""
             />
-            <img
-                src="/projects/dont-answer-be-happy/Mapping_Festival_1.jpg"
+            <enhanced:img
+                src={mappingImage}
                 alt=""
             />
         </div>
