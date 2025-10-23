@@ -1,6 +1,6 @@
 <script context="module">
     export const metadata = {
-        id: 2,
+        id: 7,
         title: "curious.images",
         tags: "website",
         image: "/projects/curious.images/curious.images-1.png",
