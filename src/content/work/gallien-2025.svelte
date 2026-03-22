@@ -1,5 +1,5 @@
 <script context="module">
-        import previewImage from "$lib/assets/projects/gallien2025/gallien-2025-0.png?enhanced";
+    import previewImage from "$lib/assets/projects/gallien2025/gallien-2025-0.png?enhanced";
 
     export const metadata = {
         id: 1,
@@ -8,6 +8,9 @@
         image: previewImage,
         date: "2025",
     };
+</script>
+
+<script>
     import WorkLayout from "$lib/layouts/WorkLayout.svelte";
 
     import heroImage from "$lib/assets/projects/gallien2025/gallien-2025-0.png?enhanced";

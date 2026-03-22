@@ -1,6 +1,3 @@
-<script>
-    import "$lib/styles/project.css";
-</script>
 
 <section class="project">
     <div class="left">

@@ -1,9 +1,9 @@
 <script>
-	export let href;
+	const { href, children } = $props();
 </script>
 
 <a {href} target="_blank" rel="noreferrer">
-	<slot />
+	{@render children()}
 </a>
 
 <style>

@@ -6,7 +6,7 @@
         title: "Don't Answer Be Happy",
         tags: "installation",
         image: previewImage,
-        date: "2023-05-01",
+        date: "2023",
     };
 </script>
 
@@ -38,7 +38,7 @@
             <h3 class="title">Don't Answer Be Happy</h3>
 
             <p>
-                The installation <italic>Don't Answer Be Happy</italic> creates an
+                The installation <em>Don't Answer Be Happy</em> creates an
                 interactive experience in which everything revolves around the personal
                 smartphone. Engrossed in a conversation between their own personal
                 smartphone and the surrounding artificial intelligence, visitors
@@ -51,7 +51,7 @@
             <div class="special">
                 <h4>Featured at Mapping Festival 2023</h4>
                 <p>
-                    <italic>Don't Answer Be Happy</italic> was exhibited at the
+                    <em>Don't Answer Be Happy</em> was exhibited at the
                     <a
                         href="https://mappingfestival.com/en/project/9/Dont%20Answer%20Be%20Happy"
                         target="_blank"
@@ -108,9 +108,8 @@
                 width="100%"
                 src="https://www.youtube-nocookie.com/embed/7n1KBsXx-IU?modestbranding=1&amp;cc_load_policy=1"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen=""
+                allowfullscreen
             ></iframe>
 
             <div>
@@ -127,9 +126,7 @@
                     exploitation of the global South. Without the major
                     discrepancy in income and living conditions, we would not be
                     able to live out this (in our case) tech luxury to this
-                    extent. The installation <italic
-                        >Don't Answer Be Happy</italic
-                    > focuses on the people who make Western tech luxury possible
+                    extent. The installation <em>Don't Answer Be Happy</em> focuses on the people who make Western tech luxury possible
                     in the first place through their daily work in precarious conditions,
                     be it clickwork in the creation of datasets that serve as the
                     basis for AI algorithms, in content moderation, in the production
@@ -159,7 +156,7 @@
             <div>
                 <h4>Narration</h4>
                 <p>
-                    In the installation <italic>Don't Answer Be Happy</italic> we
+                    In the installation <em>Don't Answer Be Happy</em> we
                     have developed a narrative around the personal smartphone, which
                     deals with the issues described previously. The smartphone is
                     the focal point and the depicting element that perfectly represents
@@ -198,7 +195,7 @@
             </figure>
 
             <div>
-                <h4>Credits</h4>
+                <h4>Credits & Contribution</h4>
                 <ul class="list">
                     <li>
                         Concept, Design, Programming, Setup - <strong

@@ -7,7 +7,7 @@
     import About from "$lib/components/About.svelte";
     import { tiltButton } from "$lib/scripts/effects";
 
-    export let data;
+    const { data } = $props();
     const projects = data.projects;
 
     onMount(() => {
@@ -24,6 +24,17 @@
         });
     });
 </script>
+
+<svelte:head>
+    <title>Portfolio — Simon Müller</title>
+    <meta name="description" content="Portfolio of Simon Müller — Developer, Interaction Designer & Creative Thinker from Bern, Switzerland." />
+    <meta property="og:title" content="Portfolio — Simon Müller" />
+    <meta property="og:description" content="Developer, Interaction Designer & Creative Thinker from Bern, Switzerland." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portfolio — Simon Müller" />
+    <meta name="twitter:description" content="Developer, Interaction Designer & Creative Thinker from Bern, Switzerland." />
+</svelte:head>
 
 <div class="container">
     <div class="content">
@@ -49,7 +60,7 @@
                         </p>
                         <span
                             style="z-index: 0;transform: matrix(1, 0, 0, 1, 0, 0);"
-                        />
+                        ></span>
                     </div>
                 </div>
             </div>
@@ -83,7 +94,6 @@
     .content {
         position: relative;
         max-width: 2500px;
-        position: relative;
     }
 
     .start {
@@ -139,6 +149,7 @@
             color: var(--primary-100);
             mix-blend-mode: difference;
             -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
             border: 1px solid rgba(98, 94, 90, 0.9);
             background-color: rgba(0, 0, 0, 0.8);
         }

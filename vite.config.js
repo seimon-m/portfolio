@@ -12,9 +12,4 @@ export default defineConfig({
             allow: [".."],
         },
     },
-    kit: {
-        files: {
-            assets: "static",
-        },
-    },
 });

@@ -14,6 +14,7 @@ export const load = async ({ data }) => {
         return {
             slug,
             Component: module.default,
+            title: module.metadata?.title || slug,
         };
     }
 

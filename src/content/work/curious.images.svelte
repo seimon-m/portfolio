@@ -1,30 +1,42 @@
 <script context="module">
+    import previewImage from "$lib/assets/projects/curious.images/curious.images-1.png?enhanced";
+
     export const metadata = {
         id: 7,
         title: "curious.images",
         tags: "website",
-        image: "/projects/curious.images/curious.images-1.png",
+        image: previewImage,
         date: "2022",
     };
 </script>
 
 <script>
     import WorkLayout from "$lib/layouts/WorkLayout.svelte";
+
+    import image1 from "$lib/assets/projects/curious.images/curious.images-1.png?enhanced";
+    import image2 from "$lib/assets/projects/curious.images/curious.images-2.png?enhanced";
+    import image3 from "$lib/assets/projects/curious.images/curious.images-3.png?enhanced";
+    import image4 from "$lib/assets/projects/curious.images/curious.images-4.png?enhanced";
+    import image5 from "$lib/assets/projects/curious.images/curious.images-5.png?enhanced";
+    import image6 from "$lib/assets/projects/curious.images/curious.images-6.png?enhanced";
+    import image7 from "$lib/assets/projects/curious.images/curious.images-7.png?enhanced";
+    import image8 from "$lib/assets/projects/curious.images/curious.images-8.png?enhanced";
+    import image9 from "$lib/assets/projects/curious.images/curious.images-9.png?enhanced";
 </script>
 
 <WorkLayout>
     <svelte:fragment slot="left">
-        <img
+        <enhanced:img
             class="heroimage"
-            src="/projects/curious.images/curious.images-1.png"
+            src={image1}
             alt="curious.images screenshot"
         />
 
         <div class="infos">
-            <h3 class="title">curious.image</h3>
+            <h3 class="title">curious.images</h3>
 
             <p>
-                For space enthusiasts, <italic>curious.image</italic> is the place
+                For space enthusiasts, <em>curious.images</em> is the place
                 to go to visually explore the planet Mars. Our goal was to simplify
                 access to the countless photos taken by the Mars rover Curiosity
                 and make them more accessible. Enthusiasm for space was the spark
@@ -36,7 +48,6 @@
             <iframe
                 src="https://www.youtube.com/embed/wKWRHlmwU1k?controls=0"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
                 style="margin-top: 6rem;"
@@ -77,15 +88,15 @@
 
     <svelte:fragment slot="right">
         <div class="images right">
-            <img src="/projects/curious.images/curious.images-1.png" alt="" />
-            <img src="/projects/curious.images/curious.images-2.png" alt="" />
-            <img src="/projects/curious.images/curious.images-3.png" alt="" />
-            <img src="/projects/curious.images/curious.images-4.png" alt="" />
-            <img src="/projects/curious.images/curious.images-5.png" alt="" />
-            <img src="/projects/curious.images/curious.images-6.png" alt="" />
-            <img src="/projects/curious.images/curious.images-7.png" alt="" />
-            <img src="/projects/curious.images/curious.images-8.png" alt="" />
-            <img src="/projects/curious.images/curious.images-9.png" alt="" />
+            <enhanced:img src={image1} alt="" />
+            <enhanced:img src={image2} alt="" />
+            <enhanced:img src={image3} alt="" />
+            <enhanced:img src={image4} alt="" />
+            <enhanced:img src={image5} alt="" />
+            <enhanced:img src={image6} alt="" />
+            <enhanced:img src={image7} alt="" />
+            <enhanced:img src={image8} alt="" />
+            <enhanced:img src={image9} alt="" />
         </div>
     </svelte:fragment>
 </WorkLayout>

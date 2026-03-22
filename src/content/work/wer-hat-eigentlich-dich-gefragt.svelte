@@ -1,22 +1,30 @@
 <script context="module">
+    import previewImage from "$lib/assets/projects/wer-hat-eigentlich-dich-gefragt/wer-hat-eigentlich-dich-gefragt-1.jpg?enhanced";
+
     export const metadata = {
-        id: 7,
+        id: 8,
         title: "Wer hat eigentlich dich gefragt?",
         tags: "performance",
-        image: "/projects/wer-hat-eigentlich-dich-gefragt/wer-hat-eigentlich-dich-gefragt-1.jpg",
+        image: previewImage,
         date: "2022",
     };
 </script>
 
 <script>
     import WorkLayout from "$lib/layouts/WorkLayout.svelte";
+
+    import image1 from "$lib/assets/projects/wer-hat-eigentlich-dich-gefragt/wer-hat-eigentlich-dich-gefragt-1.jpg?enhanced";
+    import image2 from "$lib/assets/projects/wer-hat-eigentlich-dich-gefragt/wer-hat-eigentlich-dich-gefragt-2.jpg?enhanced";
+    import image3 from "$lib/assets/projects/wer-hat-eigentlich-dich-gefragt/wer-hat-eigentlich-dich-gefragt-3.jpg?enhanced";
+    import image4 from "$lib/assets/projects/wer-hat-eigentlich-dich-gefragt/wer-hat-eigentlich-dich-gefragt-4.jpg?enhanced";
+    import image5 from "$lib/assets/projects/wer-hat-eigentlich-dich-gefragt/wer-hat-eigentlich-dich-gefragt-5.jpg?enhanced";
 </script>
 
 <WorkLayout>
     <svelte:fragment slot="left">
-        <img
+        <enhanced:img
             class="heroimage"
-            src="/projects/wer-hat-eigentlich-dich-gefragt/wer-hat-eigentlich-dich-gefragt-1.jpg"
+            src={image1}
             alt="Wer hat eigentlich dich gefragt? performance"
         />
 
@@ -39,7 +47,7 @@
             <div>
                 <p>
                     In the theatre production <italic
-                        >Wer hat eigentlich dich gefargt?</italic
+                        >Wer hat eigentlich dich gefragt?</italic
                     >, a group of young people deal with the insecurities of
                     becoming an adult. The avatar is played by other young
                     people on stage with the help of VR headsets. The avatars
@@ -73,7 +81,7 @@
             </div>
 
             <div>
-                <h4>Credits</h4>
+                <h4>Credits & Contribution</h4>
                 <ul class="list">
                     <li>
                         Art Direction - <strong
@@ -107,26 +115,11 @@
 
     <svelte:fragment slot="right">
         <div class="images right">
-            <img
-                src="/projects/wer-hat-eigentlich-dich-gefragt/wer-hat-eigentlich-dich-gefragt-1.jpg"
-                alt=""
-            />
-            <img
-                src="/projects/wer-hat-eigentlich-dich-gefragt/wer-hat-eigentlich-dich-gefragt-2.jpg"
-                alt=""
-            />
-            <img
-                src="/projects/wer-hat-eigentlich-dich-gefragt/wer-hat-eigentlich-dich-gefragt-3.jpg"
-                alt=""
-            />
-            <img
-                src="/projects/wer-hat-eigentlich-dich-gefragt/wer-hat-eigentlich-dich-gefragt-4.jpg"
-                alt=""
-            />
-            <img
-                src="/projects/wer-hat-eigentlich-dich-gefragt/wer-hat-eigentlich-dich-gefragt-5.jpg"
-                alt=""
-            />
+            <enhanced:img src={image1} alt="" />
+            <enhanced:img src={image2} alt="" />
+            <enhanced:img src={image3} alt="" />
+            <enhanced:img src={image4} alt="" />
+            <enhanced:img src={image5} alt="" />
         </div>
     </svelte:fragment>
 </WorkLayout>

@@ -120,7 +120,7 @@ p {
     font-size: clamp(1rem, calc(10px + 0.6vw), 1.2rem);
 }
 
-italic {
+em {
     font-style: italic;
 }
 

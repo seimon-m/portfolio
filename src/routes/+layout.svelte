@@ -9,6 +9,6 @@
     injectSpeedInsights();
 </script>
 
-<main>
+<div>
     <slot />
-</main>
+</div>

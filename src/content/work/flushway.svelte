@@ -1,22 +1,30 @@
 <script context="module">
+    import previewImage from "$lib/assets/projects/flushway/flushway-screenshot_01.png?enhanced";
+
     export const metadata = {
         id: 2,
         title: "Flushway",
         tags: "website",
-        image: "/projects/flushway/flushway-screenshot_01.png",
+        image: previewImage,
         date: "2022",
     };
 </script>
 
 <script>
     import WorkLayout from "$lib/layouts/WorkLayout.svelte";
+
+    import image1 from "$lib/assets/projects/flushway/flushway-screenshot_01.png?enhanced";
+    import image2 from "$lib/assets/projects/flushway/flushway-screenshot_02.png?enhanced";
+    import image3 from "$lib/assets/projects/flushway/flushway-screenshot_03.png?enhanced";
+    import image4 from "$lib/assets/projects/flushway/flushway-screenshot_04.png?enhanced";
+    import image5 from "$lib/assets/projects/flushway/flushway-screenshot_05.png?enhanced";
 </script>
 
 <WorkLayout>
     <svelte:fragment slot="left">
-        <img
+        <enhanced:img
             class="heroimage"
-            src="/projects/flushway/flushway-screenshot_01.png"
+            src={image1}
             alt="Flushway screenshot"
         />
 
@@ -55,7 +63,6 @@
             <iframe
                 src="https://www.youtube.com/embed/JQju8B5M6q8?controls=0"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
             ></iframe>
@@ -76,7 +83,7 @@
             </div>
 
             <div>
-                <h4>Credits</h4>
+                <h4>Credits & Contribution</h4>
                 <ul class="list">
                     <li>
                         Concept, Programming - <strong>Simon Müller</strong>
@@ -94,11 +101,11 @@
 
     <svelte:fragment slot="right">
         <div class="images right">
-            <img src="/projects/flushway/flushway-screenshot_01.png" alt="" />
-            <img src="/projects/flushway/flushway-screenshot_02.png" alt="" />
-            <img src="/projects/flushway/flushway-screenshot_03.png" alt="" />
-            <img src="/projects/flushway/flushway-screenshot_04.png" alt="" />
-            <img src="/projects/flushway/flushway-screenshot_05.png" alt="" />
+            <enhanced:img src={image1} alt="" />
+            <enhanced:img src={image2} alt="" />
+            <enhanced:img src={image3} alt="" />
+            <enhanced:img src={image4} alt="" />
+            <enhanced:img src={image5} alt="" />
         </div>
     </svelte:fragment>
 </WorkLayout>

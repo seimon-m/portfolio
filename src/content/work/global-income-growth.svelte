@@ -1,22 +1,29 @@
 <script context="module">
+    import previewImage from "$lib/assets/projects/global-income-growth/global-income-growth-0.jpg?enhanced";
+
     export const metadata = {
         id: 5,
         title: "Global Income Growth",
         tags: "data visualization",
-        image: "/projects/global-income-growth/global-income-growth-0.jpg",
+        image: previewImage,
         date: "2021",
     };
 </script>
 
 <script>
     import WorkLayout from "$lib/layouts/WorkLayout.svelte";
+
+    import image1 from "$lib/assets/projects/global-income-growth/global-income-growth-1.png?enhanced";
+    import image2 from "$lib/assets/projects/global-income-growth/global-income-growth-2.jpg?enhanced";
+    import image3 from "$lib/assets/projects/global-income-growth/global-income-growth-3.jpg?enhanced";
+    import image4 from "$lib/assets/projects/global-income-growth/global-income-growth-4.jpg?enhanced";
 </script>
 
 <WorkLayout>
     <svelte:fragment slot="left">
-        <img
+        <enhanced:img
             class="heroimage"
-            src="/projects/global-income-growth/global-income-growth-1.jpg"
+            src={image1}
             alt="Global Income Growth visualization"
         />
 
@@ -58,7 +65,7 @@
             </div>
 
             <div>
-                <h4>Contribution</h4>
+                <h4>Credits & Contribution</h4>
                 <ul class="list">
                     <li>
                         Concept, Research, Design - <strong>Simon Müller</strong
@@ -71,22 +78,10 @@
 
     <svelte:fragment slot="right">
         <div class="images right">
-            <img
-                src="/projects/global-income-growth/global-income-growth-1.png"
-                alt=""
-            />
-            <img
-                src="/projects/global-income-growth/global-income-growth-2.jpg"
-                alt=""
-            />
-            <img
-                src="/projects/global-income-growth/global-income-growth-3.jpg"
-                alt=""
-            />
-            <img
-                src="/projects/global-income-growth/global-income-growth-4.jpg"
-                alt=""
-            />
+            <enhanced:img src={image1} alt="" />
+            <enhanced:img src={image2} alt="" />
+            <enhanced:img src={image3} alt="" />
+            <enhanced:img src={image4} alt="" />
         </div>
     </svelte:fragment>
 </WorkLayout>

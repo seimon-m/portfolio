@@ -1,5 +1,9 @@
 <script>
-    export let data;
+    const { data } = $props();
 </script>
 
-<svelte:component this={data.Component} />
+<svelte:head>
+    <title>{data.title} — Simon Müller</title>
+</svelte:head>
+
+<data.Component></data.Component>

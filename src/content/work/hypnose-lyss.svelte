@@ -1,22 +1,28 @@
 <script context="module">
+    import previewImage from "$lib/assets/projects/hypnose-lyss/hypnose-lyss-0.png?enhanced";
+
     export const metadata = {
         id: 4,
         title: "Hypnose Lyss",
         tags: "website",
-        image: "/projects/hypnose-lyss/hypnose-lyss-0.png",
+        image: previewImage,
         date: "2023",
     };
 </script>
 
 <script>
     import WorkLayout from "$lib/layouts/WorkLayout.svelte";
+
+    import image1 from "$lib/assets/projects/hypnose-lyss/hypnose-lyss-1.png?enhanced";
+    import image2 from "$lib/assets/projects/hypnose-lyss/hypnose-lyss-2.png?enhanced";
+    import image3 from "$lib/assets/projects/hypnose-lyss/hypnose-lyss-3.png?enhanced";
 </script>
 
 <WorkLayout>
     <svelte:fragment slot="left">
-        <img
+        <enhanced:img
             class="heroimage"
-            src="/projects/hypnose-lyss/hypnose-lyss-1.png"
+            src={image1}
             alt="Hypnosetherapie Lyss website"
         />
 
@@ -56,9 +62,9 @@
 
     <svelte:fragment slot="right">
         <div class="images right">
-            <img src="/projects/hypnose-lyss/hypnose-lyss-1.png" alt="" />
-            <img src="/projects/hypnose-lyss/hypnose-lyss-2.png" alt="" />
-            <img src="/projects/hypnose-lyss/hypnose-lyss-3.png" alt="" />
+            <enhanced:img src={image1} alt="" />
+            <enhanced:img src={image2} alt="" />
+            <enhanced:img src={image3} alt="" />
         </div>
     </svelte:fragment>
 </WorkLayout>
